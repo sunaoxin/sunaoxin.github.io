@@ -3,11 +3,11 @@
   <title>OnlyWait&#39;s Blog</title>
   
   
-  <link href="http://sunaoxin.github.io.com/atom.xml" rel="self"/>
+  <link href="http://qaaa.top/atom.xml" rel="self"/>
   
-  <link href="http://sunaoxin.github.io.com/"/>
-  <updated>2021-07-30T14:05:44.094Z</updated>
-  <id>http://sunaoxin.github.io.com/</id>
+  <link href="http://qaaa.top/"/>
+  <updated>2021-07-30T14:29:36.706Z</updated>
+  <id>http://qaaa.top/</id>
   
   <author>
     <name>Sun Aoxin</name>
@@ -18,23 +18,27 @@
   
   <entry>
     <title>小爱课程表适配</title>
-    <link href="http://sunaoxin.github.io.com/2021/07/29/xiaoai/"/>
-    <id>http://sunaoxin.github.io.com/2021/07/29/xiaoai/</id>
+    <link href="http://qaaa.top/2021/07/29/xiaoai/"/>
+    <id>http://qaaa.top/2021/07/29/xiaoai/</id>
     <published>2021-07-29T13:58:35.959Z</published>
-    <updated>2021-07-30T14:05:44.094Z</updated>
+    <updated>2021-07-30T14:29:36.706Z</updated>
     
-    <content type="html"><![CDATA[<p>##使用cheerio<br>cheerio是jquery核心功能的一个快速灵活而又简洁的实现，主要是为了用在服务器端需要对DOM进行操作的地方，让你在服务器端和html愉快的玩耍<br>##快到没朋友：<br>cheerio使用了及其简洁而又标准的DOM模型， 因此对文档的转换，操作，渲染都极其的高效。基本的端到端测试显示它的速度至少是JSDOM的8倍<br>##provider函数对课程表进行解析</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function scheduleHtmlProvider(dom = document) &#123;</span><br><span class="line">var aaa = dom.querySelector(&#x27;#user&#x27;).outerHTML;</span><br><span class="line">return aaa;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h4 id="使用cheerio"><a href="#使用cheerio" class="headerlink" title="使用cheerio"></a>使用cheerio</h4><p>cheerio是jquery核心功能的一个快速灵活而又简洁的实现，主要是为了用在服务器端需要对DOM进行操作的地方，让你在服务器端和html愉快的玩耍</p><h4 id="快到没朋友"><a href="#快到没朋友" class="headerlink" title="快到没朋友"></a>快到没朋友</h4><p>cheerio使用了及其简洁而又标准的DOM模型， 因此对文档的转换，操作，渲染都极其的高效。基本的端到端测试显示它的速度至少是JSDOM的8倍</p><h4 id="provider函数对课程表进行解析"><a href="#provider函数对课程表进行解析" class="headerlink" title="provider函数对课程表进行解析"></a>provider函数对课程表进行解析</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function scheduleHtmlProvider(dom = document) &#123;</span><br><span class="line">var aaa = dom.querySelector(&#x27;#user&#x27;).outerHTML;</span><br><span class="line">return aaa;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;##使用cheerio&lt;br&gt;cheerio是jquery核心功能的一个快速灵活而又简洁的实现，主要是为了用在服务器端需要对DOM进行操作的地方，让你在服务器端和html愉快的玩耍&lt;br&gt;##快到没朋友：&lt;br&gt;cheerio使用了及其简洁而又标准的DOM模型， 因此对文档</summary>
+    <summary type="html">&lt;h4 id=&quot;使用cheerio&quot;&gt;&lt;a href=&quot;#使用cheerio&quot; class=&quot;headerlink&quot; title=&quot;使用cheerio&quot;&gt;&lt;/a&gt;使用cheerio&lt;/h4&gt;&lt;p&gt;cheerio是jquery核心功能的一个快速灵活而又简洁的实现，主要是为了用在服务</summary>
       
     
     
     
+    <category term="小爱课程表" scheme="http://qaaa.top/categories/%E5%B0%8F%E7%88%B1%E8%AF%BE%E7%A8%8B%E8%A1%A8/"/>
     
-    <category term="cheerio" scheme="http://sunaoxin.github.io.com/tags/cheerio/"/>
+    
+    <category term="cheerio" scheme="http://qaaa.top/tags/cheerio/"/>
+    
+    <category term="JavaScript" scheme="http://qaaa.top/tags/JavaScript/"/>
     
   </entry>
   
