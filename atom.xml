@@ -3,11 +3,11 @@
   <title>OnlyWait&#39;s Blog</title>
   
   
-  <link href="http://qaaa.top/atom.xml" rel="self"/>
+  <link href="https://qaaa.top/atom.xml" rel="self"/>
   
-  <link href="http://qaaa.top/"/>
+  <link href="https://qaaa.top/"/>
   <updated>2021-07-30T14:29:36.706Z</updated>
-  <id>http://qaaa.top/</id>
+  <id>https://qaaa.top/</id>
   
   <author>
     <name>Sun Aoxin</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>小爱课程表适配</title>
-    <link href="http://qaaa.top/2021/07/29/xiaoai/"/>
-    <id>http://qaaa.top/2021/07/29/xiaoai/</id>
+    <link href="https://qaaa.top/2021/07/29/xiaoai/"/>
+    <id>https://qaaa.top/2021/07/29/xiaoai/</id>
     <published>2021-07-29T13:58:35.959Z</published>
     <updated>2021-07-30T14:29:36.706Z</updated>
     
@@ -33,12 +33,12 @@
     
     
     
-    <category term="小爱课程表" scheme="http://qaaa.top/categories/%E5%B0%8F%E7%88%B1%E8%AF%BE%E7%A8%8B%E8%A1%A8/"/>
+    <category term="小爱课程表" scheme="https://qaaa.top/categories/%E5%B0%8F%E7%88%B1%E8%AF%BE%E7%A8%8B%E8%A1%A8/"/>
     
     
-    <category term="cheerio" scheme="http://qaaa.top/tags/cheerio/"/>
+    <category term="cheerio" scheme="https://qaaa.top/tags/cheerio/"/>
     
-    <category term="JavaScript" scheme="http://qaaa.top/tags/JavaScript/"/>
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
     
   </entry>
   
