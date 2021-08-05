@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>01基本数据类型和引用数据类型</title>
+    <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/</url>
+    <content><![CDATA[<p>1、当比较两个基本数据类型时，就是比值  </p>
+<p>2、当比较两个引用数据类型时，就是比较对象的内存地址  </p>
+<p>3、如果两个对象时一模一样的，但是地址不同，也会返回false  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Console.log(obj3 == obj4);</span><br></pre></td></tr></table></figure>
+
+
+<p>PS：对象是储存在堆内存中，基本数据类型储存在栈内存中</p>
+]]></content>
+      <categories>
+        <category>JavaScript学习之路</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>02对象字面量</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/</url>
     <content><![CDATA[<p>1、使用对象字面量来创建一个对象：var obj = {};<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;等同于var obj = new<br>2、在创建对象时，可以直接指定对象中的属性  </p>
@@ -25,24 +43,6 @@
       <tags>
         <tag>JavaScript</tag>
         <tag>cheerio</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>01基本数据类型和引用数据类型</title>
-    <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/</url>
-    <content><![CDATA[<p>1、当比较两个基本数据类型时，就是比值  </p>
-<p>2、当比较两个引用数据类型时，就是比较对象的内存地址  </p>
-<p>3、如果两个对象时一模一样的，但是地址不同，也会返回false  </p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Console.log(obj3 == obj4);</span><br></pre></td></tr></table></figure>
-
-
-<p>PS：对象是储存在堆内存中，基本数据类型储存在栈内存中</p>
-]]></content>
-      <categories>
-        <category>JavaScript学习之路</category>
-      </categories>
-      <tags>
-        <tag>JavaScript</tag>
       </tags>
   </entry>
 </search>
