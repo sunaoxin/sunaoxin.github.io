@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>02对象字面量</title>
+    <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/</url>
+    <content><![CDATA[<p>1、使用对象字面量来创建一个对象：var obj = {};<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;等同于var obj = new<br>2、在创建对象时，可以直接指定对象中的属性  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">语法：&#123;属性名：属性值，属性名：属性值，，，&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">	name:“猪八戒”,</span><br><span class="line">	age:”28”,</span><br><span class="line">	gender:”男”</span><br><span class="line">	test:”&#123;name:”zhubajie”&#125;”</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>JavaScript学习之路</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小爱课程表适配</title>
+    <url>/2021/07/29/xiaoai/</url>
+    <content><![CDATA[<h4 id="使用cheerio"><a href="#使用cheerio" class="headerlink" title="使用cheerio"></a>使用cheerio</h4><p>cheerio是jquery核心功能的一个快速灵活而又简洁的实现，主要是为了用在服务器端需要对DOM进行操作的地方，让你在服务器端和html愉快的玩耍</p>
+<h4 id="快到没朋友"><a href="#快到没朋友" class="headerlink" title="快到没朋友"></a>快到没朋友</h4><p>cheerio使用了及其简洁而又标准的DOM模型， 因此对文档的转换，操作，渲染都极其的高效。基本的端到端测试显示它的速度至少是JSDOM的8倍</p>
+<h4 id="provider函数对课程表进行解析"><a href="#provider函数对课程表进行解析" class="headerlink" title="provider函数对课程表进行解析"></a>provider函数对课程表进行解析</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function scheduleHtmlProvider(dom = document) &#123;</span><br><span class="line">	var aaa = dom.querySelector(&#x27;#user&#x27;).outerHTML;</span><br><span class="line">	return aaa;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>小爱课程表</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>cheerio</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>01基本数据类型和引用数据类型</title>
+    <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/</url>
+    <content><![CDATA[<p>1、当比较两个基本数据类型时，就是比值  </p>
+<p>2、当比较两个引用数据类型时，就是比较对象的内存地址  </p>
+<p>3、如果两个对象时一模一样的，但是地址不同，也会返回false  </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Console.log(obj3 == obj4);</span><br></pre></td></tr></table></figure>
+
+
+<p>PS：对象是储存在堆内存中，基本数据类型储存在栈内存中</p>
+]]></content>
+      <categories>
+        <category>JavaScript学习之路</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+</search>
