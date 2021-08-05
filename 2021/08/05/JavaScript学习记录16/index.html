@@ -114,15 +114,15 @@
 
 
 
-<meta name="description" content="1、当比较两个基本数据类型时，就是比值   2、当比较两个引用数据类型时，就是比较对象的内存地址   3、如果两个对象时一模一样的，但是地址不同，也会返回false   1Console.log(obj3 &#x3D;&#x3D; obj4);   PS：对象是储存在堆内存中，基本数据类型储存在栈内存中">
+<meta name="description" content="12345678910function createDog(name,age)&amp;#123;	var obj &#x3D; new Object();	obj.name &#x3D; name;	obj.age &#x3D; age;	obj.sayHello &#x3D; function()&amp;#123;		alert(”汪汪”);	&amp;#125;;	return obj;&amp;#125;var dog &#x3D; createDog(”旺财”,3)">
 <meta property="og:type" content="article">
-<meta property="og:title" content="01 基本数据类型和引用数据类型">
-<meta property="og:url" content="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/index.html">
+<meta property="og:title" content="16 构造函数">
+<meta property="og:url" content="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/index.html">
 <meta property="og:site_name" content="OnlyWait&#39;s Blog">
-<meta property="og:description" content="1、当比较两个基本数据类型时，就是比值   2、当比较两个引用数据类型时，就是比较对象的内存地址   3、如果两个对象时一模一样的，但是地址不同，也会返回false   1Console.log(obj3 &#x3D;&#x3D; obj4);   PS：对象是储存在堆内存中，基本数据类型储存在栈内存中">
+<meta property="og:description" content="12345678910function createDog(name,age)&amp;#123;	var obj &#x3D; new Object();	obj.name &#x3D; name;	obj.age &#x3D; age;	obj.sayHello &#x3D; function()&amp;#123;		alert(”汪汪”);	&amp;#125;;	return obj;&amp;#125;var dog &#x3D; createDog(”旺财”,3)">
 <meta property="og:locale">
-<meta property="article:published_time" content="2021-08-05T03:42:26.311Z">
-<meta property="article:modified_time" content="2021-08-05T14:05:32.933Z">
+<meta property="article:published_time" content="2021-08-05T14:57:38.969Z">
+<meta property="article:modified_time" content="2021-08-05T15:06:44.142Z">
 <meta property="article:author" content="Sun Aoxin">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -155,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="https://qaaa.top/2021/08/05/JavaScript学习记录01/"/>
+  <link rel="canonical" href="https://qaaa.top/2021/08/05/JavaScript学习记录16/"/>
 
 
 
 
 
-  <title>01 基本数据类型和引用数据类型 | OnlyWait's Blog</title>
+  <title>16 构造函数 | OnlyWait's Blog</title>
   
 
 
@@ -327,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
@@ -344,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">01 基本数据类型和引用数据类型</h1>
+          <h1 class="post-title" itemprop="name headline">16 构造函数</h1>
         
 
         <div class="post-meta">
@@ -356,7 +356,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-08-05T11:42:26+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-08-05T22:57:38+08:00">
                 2021-08-05
               </time>
             
@@ -415,7 +415,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  93
+                  474
                 </span>
               
 
@@ -440,13 +440,44 @@
       
 
       
-        <p>1、当比较两个基本数据类型时，就是比值  </p>
-<p>2、当比较两个引用数据类型时，就是比较对象的内存地址  </p>
-<p>3、如果两个对象时一模一样的，但是地址不同，也会返回false  </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Console.log(obj3 == obj4);</span><br></pre></td></tr></table></figure>
+        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function createDog(name,age)&#123;</span><br><span class="line">	var obj = new Object();</span><br><span class="line">	obj.name = name;</span><br><span class="line">	obj.age = age;</span><br><span class="line">	obj.sayHello = function()&#123;</span><br><span class="line">		alert(”汪汪”);</span><br><span class="line">	&#125;;</span><br><span class="line">	return obj;</span><br><span class="line">&#125;</span><br><span class="line">var dog = createDog(”旺财”,3);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>由于使用工厂方法创建的对象，使用的构造函数都是Object</li>
+<li>无法区分出多种不同的对象所以才有下文</li>
+</ul>
+<hr>
+<p>####—–正篇开始</p>
+<ul>
+<li><p>创建一个构造函数，专门用来创建Person对象<br>  构造函数就是一个普通的函数，创建方式和普通函数没有区别<br>  不同的是构造函数习惯上首字母大写</p>
+</li>
+<li><p>构造函数和普通函数的区别就是调用方式的不同<br>  普通函数是直接调用，而构造函数需要使用new关键字来调用</p>
+</li>
+</ul>
+<p>#####构造函数的执行流程：</p>
+<ol>
+<li>立刻创建一个新对象</li>
+<li>将新建的对象设置为函数中this,在构造函数中可以使用this来引用新建的对象</li>
+<li>逐行执行函数中的代码</li>
+<li>将新建的对象作为返回值返回</li>
+</ol>
+<ul>
+<li>使用同一个构造函数创建的对象我们成为一类对象，也将一个构造函数称为一个类</li>
+<li>我们将通过一个构造函数创建的对象，称为类的实例</li>
+</ul>
+<p>#####this的情况：</p>
+<ol>
+<li>当以函数形式调用时，this是window</li>
+<li>当以方法形式调用时，谁调用方法this就是谁</li>
+<li>当以构造函数的形式调用时，this就是新创建的那个对象</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function Person(name,age,gender)&#123;</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">	this.gender = gender;</span><br><span class="line">	this.sayName = function()&#123;</span><br><span class="line">		alert(this.name);</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br><span class="line">var per = new Person(”白骨精”,16,”女”);</span><br><span class="line">var per2 = new Person(”猪八戒”,38,”男”);</span><br><span class="line">console.log(per);</span><br></pre></td></tr></table></figure>
 
-
-<p>PS：对象是储存在堆内存中，基本数据类型储存在栈内存中</p>
+<p>#####使用instanceof可以检查一个对象是否是一个类的实例</p>
+<p>语法：</p>
+<pre><code>    对象 instanceof 构造函数
+    console.log(per instanceof Person);
+</code></pre>
+<p>所有的对象都是object的后代，所以任何对象和Object做instanceof检查时都会返回true</p>
 
       
     </div>
@@ -474,7 +505,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/" title="01 基本数据类型和引用数据类型">https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/</a>
+    <a href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/" title="16 构造函数">https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -512,8 +543,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2021/07/29/xiaoai/" rel="next" title="小爱课程表适配">
-                <i class="fa fa-chevron-left"></i> 小爱课程表适配
+              <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/" rel="next" title="15 使用工厂方法创建对象">
+                <i class="fa fa-chevron-left"></i> 15 使用工厂方法创建对象
               </a>
             
           </div>
@@ -522,8 +553,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/" rel="prev" title="02 对象字面量">
-                02 对象字面量 <i class="fa fa-chevron-right"></i>
+              <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/" rel="prev" title="17 构造函数修改">
+                17 构造函数修改 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
