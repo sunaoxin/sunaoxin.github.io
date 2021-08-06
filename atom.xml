@@ -6,7 +6,7 @@
   <link href="https://qaaa.top/atom.xml" rel="self"/>
   
   <link href="https://qaaa.top/"/>
-  <updated>2021-08-06T03:13:24.739Z</updated>
+  <updated>2021-08-06T05:28:12.788Z</updated>
   <id>https://qaaa.top/</id>
   
   <author>
@@ -21,16 +21,17 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/</id>
     <published>2021-08-05T15:08:53.477Z</published>
-    <updated>2021-08-06T03:13:24.739Z</updated>
+    <updated>2021-08-06T05:28:12.788Z</updated>
     
-    <content type="html"><![CDATA[<h4> 原型prototype </h4><ul><li>我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象<span id="more"></span></li><li>如果函数作为普通函数调用prototype没有任何作用</li><li>当函数以构造函数的形式调用时，他所创建的对象中都会有一个隐含的属性，<ul><li>指向该构造函数的原型对象，我们可以通过__proto__来访问该属性</li></ul></li><li>原型对象就相当于一个公共的区域，所有同一个类的实例都可以访问到这个原型对象<ul><li>我们可以将对象中共有的内容，统一设置到原型对象中</li></ul></li><li>当我们访问对象的一个属性或方法时，他会现在对象自身中寻找，如果没有则直接使用</li><li>在创建构造函数时，可以将这些对象共有的属性和烦啊发，统一添加到构造函数的原型对象中，这样不用分别为每一个对象添加，也不会影响到全局作用域，就可以为每个对象都具有这些属性</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">function Person(name,age,gender)&#123;</span><br><span class="line">this.name = name;</span><br><span class="line">this.age = age;</span><br><span class="line">this.gender = gender;</span><br><span class="line">//向对象中添加一个方法：</span><br><span class="line">//this.sayName = function()&#123;</span><br><span class="line">alert(&quot;大家好，我是&quot;+this.name);</span><br><span class="line">//&#125;;</span><br><span class="line">//this.sayName = fun;  //提升性能</span><br><span class="line">&#125;</span><br><span class="line">//将sayName方法在全局作用域中定义  ——————不会影响全局作用域</span><br><span class="line">Person.prototype.sayName = function()&#123;</span><br><span class="line">alert(&quot;大家好，我是&quot;+this.name);</span><br><span class="line">&#125;</span><br><span class="line">var per = new Person(&quot;孙悟空&quot;,18,&quot;男&quot;);</span><br><span class="line">per.sayName(); </span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h4> 原型prototype </h4><ul><li>我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象</li></ul><span id="more"></span><ul><li>如果函数作为普通函数调用prototype没有任何作用</li><li>当函数以构造函数的形式调用时，他所创建的对象中都会有一个隐含的属性，<ul><li>指向该构造函数的原型对象，我们可以通过__proto__来访问该属性</li></ul></li><li>原型对象就相当于一个公共的区域，所有同一个类的实例都可以访问到这个原型对象<ul><li>我们可以将对象中共有的内容，统一设置到原型对象中</li></ul></li><li>当我们访问对象的一个属性或方法时，他会现在对象自身中寻找，如果没有则直接使用</li><li>在创建构造函数时，可以将这些对象共有的属性和烦啊发，统一添加到构造函数的原型对象中，这样不用分别为每一个对象添加，也不会影响到全局作用域，就可以为每个对象都具有这些属性</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">function Person(name,age,gender)&#123;</span><br><span class="line">this.name = name;</span><br><span class="line">this.age = age;</span><br><span class="line">this.gender = gender;</span><br><span class="line">//向对象中添加一个方法：</span><br><span class="line">//this.sayName = function()&#123;</span><br><span class="line">alert(&quot;大家好，我是&quot;+this.name);</span><br><span class="line">//&#125;;</span><br><span class="line">//this.sayName = fun;  //提升性能</span><br><span class="line">&#125;</span><br><span class="line">//将sayName方法在全局作用域中定义  ——————不会影响全局作用域</span><br><span class="line">Person.prototype.sayName = function()&#123;</span><br><span class="line">alert(&quot;大家好，我是&quot;+this.name);</span><br><span class="line">&#125;</span><br><span class="line">var per = new Person(&quot;孙悟空&quot;,18,&quot;男&quot;);</span><br><span class="line">per.sayName(); </span><br></pre></td></tr></table></figure>]]></content>
     
     
     <summary type="html">&lt;h4&gt; 原型prototype &lt;/h4&gt;
 
 
 &lt;ul&gt;
-&lt;li&gt;我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象</summary>
+&lt;li&gt;我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
@@ -473,7 +474,7 @@
     <link href="https://qaaa.top/2021/07/29/xiaoai/"/>
     <id>https://qaaa.top/2021/07/29/xiaoai/</id>
     <published>2021-07-29T13:58:35.959Z</published>
-    <updated>2021-07-30T14:29:36.706Z</updated>
+    <updated>2021-08-06T10:13:38.735Z</updated>
     
     <content type="html"><![CDATA[<h4 id="使用cheerio"><a href="#使用cheerio" class="headerlink" title="使用cheerio"></a>使用cheerio</h4><p>cheerio是jquery核心功能的一个快速灵活而又简洁的实现，主要是为了用在服务器端需要对DOM进行操作的地方，让你在服务器端和html愉快的玩耍</p><h4 id="快到没朋友"><a href="#快到没朋友" class="headerlink" title="快到没朋友"></a>快到没朋友</h4><p>cheerio使用了及其简洁而又标准的DOM模型， 因此对文档的转换，操作，渲染都极其的高效。基本的端到端测试显示它的速度至少是JSDOM的8倍</p><h4 id="provider函数对课程表进行解析"><a href="#provider函数对课程表进行解析" class="headerlink" title="provider函数对课程表进行解析"></a>provider函数对课程表进行解析</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function scheduleHtmlProvider(dom = document) &#123;</span><br><span class="line">var aaa = dom.querySelector(&#x27;#user&#x27;).outerHTML;</span><br><span class="line">return aaa;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
