@@ -3,9 +3,12 @@
   <entry>
     <title>01 基本数据类型和引用数据类型</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/</url>
-    <content><![CDATA[<p>1、当比较两个基本数据类型时，就是比值  </p>
-<p>2、当比较两个引用数据类型时，就是比较对象的内存地址  </p>
-<p>3、如果两个对象时一模一样的，但是地址不同，也会返回false  </p>
+    <content><![CDATA[<ul>
+<li>当比较两个基本数据类型时，就是比值  </li>
+<li>当比较两个引用数据类型时，就是比较对象的内存地址  </li>
+<li>如果两个对象时一模一样的，但是地址不同，也会返回false  </li>
+</ul>
+<span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Console.log(obj3 == obj4);</span><br></pre></td></tr></table></figure>
 
 
@@ -21,9 +24,13 @@
   <entry>
     <title>02 对象字面量</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/</url>
-    <content><![CDATA[<p>#####1、使用对象字面量来创建一个对象：</p>
+    <content><![CDATA[<h5>使用对象字面量来创建一个对象：</h5>
+
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var obj = &#123;&#125;;</span><br><span class="line">等同于var obj = new</span><br></pre></td></tr></table></figure>
-<p>#####2、在创建对象时，可以直接指定对象中的属性  </p>
+
+<span id="more"></span>
+<h5>在创建对象时，可以直接指定对象中的属性</h5> 
+ 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">语法：&#123;属性名：属性值，属性名：属性值，，，&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">	name:“猪八戒”,</span><br><span class="line">	age:”28”,</span><br><span class="line">	gender:”男”</span><br><span class="line">	test:”&#123;name:”zhubajie”&#125;”</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
@@ -54,26 +61,23 @@
 <li>对象也是一个对象</li>
 <li>函数可以封装一些功能（代码），在需要时可以执行这些功能（代码）</li>
 </ul>
+<span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	console.log(fun);</span><br><span class="line">	console.log(fun);</span><br><span class="line">	console.log(fun);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>函数中可以保存一些diamanté在需要的时候调用</li>
 <li>使用typeof检查函数对象时，会返回function</li>
 <li>函数中封装的代码回按照函数顺序执行</li>
 </ul>
-<p>#####1、构造函数，将封装的代码以字符串的形式传递给构造函数</p>
+<h5>构造函数，将封装的代码以字符串的形式传递给构造函数</h5>
+
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var fun = new Function(”console.log(’Hello 这是我的第一个函数’);”);</span><br><span class="line">fun();   // 调用</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">PS：基本不会使用</span><br></pre></td></tr></table></figure>
-<p>#####2、使用函数声明来一个对象</p>
-<pre><code>    function fun2()&#123;
-        console.log(”fun”);
-    &#125; 
-</code></pre>
-<p>#####3、使用函数表达式来创建一个函数（将一个匿名函数赋值给变量）</p>
-<pre><code>    var fun3 = function()&#123;
-        console.log(”我是你命函数中封装的代码”)；
-    &#125;；
-</code></pre>
-]]></content>
+<h5>使用函数声明来一个对象</h5>
+    
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function fun2()&#123;</span><br><span class="line">	console.log(”fun”);</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<h5>使用函数表达式来创建一个函数（将一个匿名函数赋值给变量）</h5>
+    
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var fun3 = function()&#123;</span><br><span class="line">	console.log(”我是你命函数中封装的代码”)；</span><br><span class="line">&#125;；</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>JavaScript学习之路</category>
       </categories>
@@ -82,21 +86,22 @@
       </tags>
   </entry>
   <entry>
-    <title>05 函数的参数</title>
+    <title>04 函数的参数</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9504/</url>
-    <content><![CDATA[<p>#####函数参数</p>
+    <content><![CDATA[<h5>函数参数</h5>
+
 <p>定义一个用来求两个数和的函数，可以在函数的（）中指定一个或多个形参</p>
+<span id="more"></span>
 <p><strong>多个形参之间用，隔开</strong></p>
-<pre><code>    function sum(a,b)&#123;
-        console.log(a+b);
-    &#125;
-    sum(1,2);
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function sum(a,b)&#123;</span><br><span class="line">	console.log(a+b);		</span><br><span class="line">&#125;</span><br><span class="line">sum(1,2);</span><br></pre></td></tr></table></figure>
 <ul>
 <li>形参并不赋值</li>
-<li>在调用函数时，在（）中指定实参</li>
+<li>在调用函数时，在()中指定实参</li>
 <li>实参将会赋值给函数中对应的形参</li>
-<li>调用函数时解析器不会检查实参的类型，函数的实参可以时任意数据类型<br>  ○ 多余实参不会被赋值</li>
+<li>调用函数时解析器不会检查实参的类型，函数的实参可以时任意数据类型<ul>
+<li>多余实参不会被赋值</li>
+</ul>
+</li>
 <li>调用实参的数量少于形参的数量，则没有对应实参的形参将时undefined</li>
 </ul>
 ]]></content>
@@ -110,7 +115,8 @@
   <entry>
     <title>05 函数的返回值</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9505/</url>
-    <content><![CDATA[<p>#####函数返回值</p>
+    <content><![CDATA[<h5>函数返回值</h5>
+
 <ul>
 <li>在函数中书写returnn语句，return后的值将会作为函数的执行结果返回</li>
 <li>可以定义一个变量来接受结果</li>
@@ -118,10 +124,8 @@
 <li>如果return语句后不跟任何值相当于返回undefined</li>
 <li>return后可以跟任意数据类型</li>
 </ul>
-<pre><code>return &quot;hello&quot;;
-var result = alert(&quot;hello&quot;);
-</code></pre>
-]]></content>
+<span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">return &quot;hello&quot;;</span><br><span class="line">var result = alert(&quot;hello&quot;);</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>JavaScript学习之路</category>
       </categories>
@@ -132,11 +136,15 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>06 实参可以是任何值</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9506/</url>
-    <content><![CDATA[<p>#####1.实参可以是一个对象，也可以是一个函数</p>
+    <content><![CDATA[<h5>实参可以是一个对象，也可以是一个函数</h5>
+
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function mianji()&#123;</span><br><span class="line">	return 3.14*r*r;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function sayHello (o)&#123;</span><br><span class="line">	console.log(”我是”+o.name+“，今年我”+o.age+“岁，我住在”+o.address);</span><br><span class="line">&#125;</span><br><span class="line">//sayHello（“猪八戒”，28，“高老庄”）；</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//创建一个对象</span><br><span class="line">var obj = &#123;</span><br><span class="line">	name:&quot;孙悟空&quot;,</span><br><span class="line">	age:18,</span><br><span class="line">	address:&quot;花果山&quot;</span><br><span class="line">&#125;	</span><br><span class="line">sayHello(obj);</span><br><span class="line"></span><br><span class="line">function fun(a)&#123;</span><br><span class="line">	console.log(&quot;a = &quot;+a);</span><br><span class="line">	a(obj);  //</span><br><span class="line">&#125;</span><br><span class="line">fun(sayHello);  //输出函数</span><br><span class="line">fun(sayHello(obj));  //套娃，输出sayHello（obj）的执行结果</span><br></pre></td></tr></table></figure>
-<p>#####2.函数是一个具有功能的对象:</p>
+<h5>函数是一个具有功能的对象:</h5>
+
 <ul>
 <li>mianji（）<ul>
 <li>相当于使用的函数的返回值</li>
@@ -160,8 +168,18 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>07 返回值的类型</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9507/</url>
-    <content><![CDATA[<p>#####1. 使用break可以推出当前的循环<br>    - 使用continue可以跳出当次循环<br>    - 使用return可以结束整个函数<br>    - 返回值可以时任意的数据类型，也可以是一个对象，也可以是一个函数<br>    <strong>注意：return fun3; 是返回一个函数</strong><br>      return fun3();是返回一个函数的执行结果</p>
-<p>#####2. 在函数内部也可以再声明一个函数</p>
+    <content><![CDATA[<h5>使用break可以推出当前的循环</h5>
+
+<ul>
+<li>使用continue可以跳出当次循环</li>
+<li>使用return可以结束整个函数</li>
+<li>返回值可以时任意的数据类型，也可以是一个对象，也可以是一个函数<br>  <strong>注意：return fun3; 是返回一个函数</strong></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">return fun3();是返回一个函数的执行结果</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
+<h5>在函数内部也可以再声明一个函数</h5>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function fun3()&#123;</span><br><span class="line">	function fun4()&#123;</span><br><span class="line">		alert(”我是fun4”);</span><br><span class="line">	&#125;</span><br><span class="line">	return fun4;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a = fun3();  //此时，a的值就是fun4函数</span><br><span class="line">console.log(a);  //输出fun4函数</span><br><span class="line"></span><br><span class="line">a();  //相当于调用了fun4函数</span><br><span class="line">fun3()();  //执行了fun4函数</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>JavaScript学习之路</category>
@@ -173,9 +191,10 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>08 立即执行函数</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9508/</url>
-    <content><![CDATA[<p>#####立即执行函数：</p>
-<pre><code>    函数对象()
-</code></pre>
+    <content><![CDATA[<h5>立即执行函数：</h5>
+
+<p><code>函数对象()</code></p>
+<span id="more"></span>
 <p>函数定义完，立即被调用，往往只会执行一次</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">(function()&#123;</span><br><span class="line">	alert(&quot;我是一个匿名函数～～&quot;);</span><br><span class="line">&#125;)();</span><br><span class="line"></span><br><span class="line">(function(a,b)&#123;</span><br><span class="line">	console.log(&quot;a = &quot; + a);</span><br><span class="line">	console.log(&quot;b = &quot; + b);</span><br><span class="line">&#125;)(123,456);  //结果为：a = 123</span><br><span class="line">			 		  b = 456</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
@@ -188,23 +207,35 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>10 全局作用域</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9510/</url>
-    <content><![CDATA[<p>###在JS中一共有两种作用域：<br>####1、全局作用域</p>
+    <content><![CDATA[<h3>在JS中一共有两种作用域：</h3>
+<h4>全局作用域</h4>
+
 <ul>
 <li>直接编写在script标签中的JS 代码，都在全局作用域</li>
 <li>全局作用域在页面打开时创建，在页面关闭时销毁</li>
-<li>在全局作用域中有一个全局对象window，<br>  他代表的时一个浏览器窗口，我们可以直接使用</li>
-<li>在全局作用域中：<br>  创建的变量都会作为window对象的属性保存<br>  创建的函数也会作为window对象的属性保存</li>
+<li>在全局作用域中有一个全局对象window，<ul>
+<li>他代表的时一个浏览器窗口，我们可以直接使用</li>
+</ul>
+</li>
+<li>在全局作用域中：<ul>
+<li>创建的变量都会作为window对象的属性保存</li>
+<li>创建的函数也会作为window对象的属性保存</li>
+</ul>
+</li>
 <li>全局作用域中的变量都是全局变量，在页面的任意部分都可以被访问到</li>
 </ul>
+<span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var a = 10;</span><br><span class="line">function fun()&#123;</span><br><span class="line">	alert(&quot;fun函数执行了&quot;);</span><br><span class="line">&#125;</span><br><span class="line">console.log(window.a);</span><br><span class="line">window.fun();</span><br></pre></td></tr></table></figure>
-<p>#####！！！变量的声明提前</p>
+<h5>！！！变量的声明提前</h5>
+
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var a = 123;  //相当于 </span><br><span class="line">a = 123;   //也相当于 </span><br><span class="line">window.a = 123;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>变量的声明提前使用var关键字声明的变量，会在所有代码执行之前被声明，（但是不会被赋值）。<br>  例：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">console.log(&quot;a = &quot;+ a );</span><br><span class="line">   var = 123;    //var在调用中后声明，是可以执行，但是提示变量未定义</span><br></pre></td></tr></table></figure></li>
 <li>不使用var关键字的话，则变量不会被声明提前</li>
 </ul>
-<p>#####！！！函数的声明提前</p>
+<h5>！！！函数的声明提前</h5>
+
 <ul>
 <li>使用函数声明形式创建的函数function 函数(){}<br>  1.它会在所有的代码执行之前就会被创建，所以我们可以在函数声明前来调用函数<br>  2.使用函数表达式创建的函数，不会被声明提前，所以不能在声明前调用<ul>
 <li>会声明提前，而且可以在声明前调用：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function fun()&#123;</span><br><span class="line">		console.log(”我是一个fun函数”);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
@@ -223,20 +254,23 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>09 JS基础_方法</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9509/</url>
-    <content><![CDATA[<p>#####1、对象的属性值可以是任何的数据类型，也可以是函数</p>
+    <content><![CDATA[<h5>对象的属性值可以是任何的数据类型，也可以是函数</h5>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var obj = new Object();</span><br><span class="line">obj.name = “孙悟空”;</span><br><span class="line">obj.age = 18;</span><br><span class="line">obj.sayName = function()&#123;</span><br><span class="line">	console.log(obj.name);</span><br><span class="line">&#125;</span><br><span class="line">function fun()&#123;</span><br><span class="line">	console.log(obj.name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<span id="more"></span>
+
 <p>//调用方法</p>
-<pre><code>obj.sayName();
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">obj.sayName();</span><br></pre></td></tr></table></figure>
+
 <p>//调用函数</p>
-<pre><code>fun();
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">fun();</span><br></pre></td></tr></table></figure>
 <ul>
 <li>函数也可以成为对象的属性，如果一个函数作为一个对象的属性保存，那么我们称这个函数是这个对象的方法。</li>
 <li>调用这个函数就是调用对象的方法(method);</li>
 <li>但是它只是名称上的区别，没有其他区别。</li>
 </ul>
-<p>#####2、枚举对象中的属性，使用for…in语句</p>
+<h5>枚举对象中的属性，使用for…in语句</h5>
+    
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">语法，for(var 变量 in 对象)&#123;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">for(var n in obj)&#123;</span><br><span class="line">	console.log(”属性名“+ n);</span><br><span class="line">	console.log(“属性值”+ obj[n]);  //此时根据n的值选取那个obj，输出属性值</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <ul>
@@ -254,23 +288,20 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>11 函数作用域</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9511/</url>
-    <content><![CDATA[<p>####2、函数作用域</p>
+    <content><![CDATA[<h4>函数作用域</h4>
+
 <ul>
-<li><p>调用函数时创建的函数作用域，函数执行完毕后，函数作用域销毁</p>
-</li>
-<li><p>每调用一次函数，就会创建一个新的函数作用域，他们之间是相互独立的</p>
-</li>
-<li><p>在函数作用域中可以访问到全局作用域的变量<br>  在全局作用域中，无法访问到函数作用域的变量</p>
-</li>
-<li><p>在函数作用域中操作一个变量，会在自身作用域中寻找</p>
-<p>  § 如果有就直接使用，如果没有，就在上一级作用域寻找。<br>  § 如果全局作用域中依然没有找到，则报错ReferenceError</p>
-</li>
-<li><p>在函数中要访问全局变量可以使用window对象。  例如window.a</p>
-</li>
+<li>调用函数时创建的函数作用域，函数执行完毕后，函数作用域销毁</li>
+<li>每调用一次函数，就会创建一个新的函数作用域，他们之间是相互独立的</li>
+<li>在函数作用域中可以访问到全局作用域的变量<br>  在全局作用域中，无法访问到函数作用域的变量</li>
+<li>在函数作用域中操作一个变量，会在自身作用域中寻找<br>  § 如果有就直接使用，如果没有，就在上一级作用域寻找。<br>  § 如果全局作用域中依然没有找到，则报错ReferenceError</li>
+<li>在函数中要访问全局变量可以使用window对象。  例如window.a</li>
 </ul>
+<span id="more"></span>    
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var a = 10;  //创建一个变量</span><br><span class="line">function fun()&#123;</span><br><span class="line">	var a = &quot;我是函数中的变量a&quot;;</span><br><span class="line">	var b = 20;</span><br><span class="line">	console.log(&quot;a = &quot;+ a);  //可以访问到外部的a</span><br><span class="line">&#125;</span><br><span class="line">fun();</span><br><span class="line">console.log(&quot;b = &quot;+ b);  //访问不到b</span><br></pre></td></tr></table></figure>
 
-<p>#####！！函数作用域也有声明提前</p>
+<h5>！！函数作用域也有声明提前</h5>
+    
 <ul>
 <li>使用var关键字声明的变量，会在函数中所有的代码执行之前被声明</li>
 <li>函数声明也会在函数中所有的代码执行之前执行</li>
@@ -286,8 +317,8 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>12 debug</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9512/</url>
-    <content><![CDATA[<p>####F10添加监控，可以看各个值当前的参数（有点水）</p>
-]]></content>
+    <content><![CDATA[<h5>F10添加监控，可以看各个值当前的参数（有点水）</h5>
+<span id="more"></span>]]></content>
       <categories>
         <category>JavaScript学习之路</category>
       </categories>
@@ -299,12 +330,9 @@ var result = alert(&quot;hello&quot;);
     <title>13 this关键字</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9513/</url>
     <content><![CDATA[<ul>
-<li><p>解析器在调用函数每次都会向函数内部传递进一个隐含的参数，这个隐含的参数就是this，this指向的是一个对象</p>
-</li>
-<li><p>这个对象我们成为函数执行的上下文对象</p>
-</li>
-<li><p>根据函数的调用方式不同，this会指向不同的对象<br>  1、以函数形式调用，this永远都是window<br>  2、以方法形式调用，this就是调用方法的那个对象</p>
-</li>
+<li>解析器在调用函数每次都会向函数内部传递进一个隐含的参数，这个隐含的参数就是this，this指向的是一个对象<span id="more"></span></li>
+<li>这个对象我们成为函数执行的上下文对象</li>
+<li>根据函数的调用方式不同，this会指向不同的对象<br>  1、以函数形式调用，this永远都是window<br>  2、以方法形式调用，this就是调用方法的那个对象</li>
 </ul>
 ]]></content>
       <categories>
@@ -317,7 +345,11 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>14 this关键字补充</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9514/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function fun()&#123;</span><br><span class="line">	console.log(this.name);</span><br><span class="line">&#125;</span><br><span class="line">var obj = &#123;</span><br><span class="line">	name:”孙悟空”,</span><br><span class="line">	sayName:fun</span><br><span class="line">&#125;;</span><br><span class="line">var obj2 = &#123;</span><br><span class="line">	name:”沙和尚”，</span><br><span class="line">	sayName:fun</span><br><span class="line">&#125;;</span><br><span class="line">var name = “全局的name属性”;</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h5>this补充说明--></h5>
+
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function fun()&#123;</span><br><span class="line">	console.log(this.name);</span><br><span class="line">&#125;</span><br><span class="line">var obj = &#123;</span><br><span class="line">	name:”孙悟空”,</span><br><span class="line">	sayName:fun</span><br><span class="line">&#125;;</span><br><span class="line">var obj2 = &#123;</span><br><span class="line">	name:”沙和尚”，</span><br><span class="line">	sayName:fun</span><br><span class="line">&#125;;</span><br><span class="line">var name = “全局的name属性”;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">obj.sayName();  //输出”孙悟空“</span><br><span class="line">obj2.sayName();  //输出“沙和尚” 以方法形式调用</span><br><span class="line">fun();  //输出”全局的name属性“   以函数形式调用</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>JavaScript学习之路</category>
@@ -329,43 +361,46 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>16 构造函数</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/</url>
-    <content><![CDATA[<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function createDog(name,age)&#123;</span><br><span class="line">	var obj = new Object();</span><br><span class="line">	obj.name = name;</span><br><span class="line">	obj.age = age;</span><br><span class="line">	obj.sayHello = function()&#123;</span><br><span class="line">		alert(”汪汪”);</span><br><span class="line">	&#125;;</span><br><span class="line">	return obj;</span><br><span class="line">&#125;</span><br><span class="line">var dog = createDog(”旺财”,3);</span><br></pre></td></tr></table></figure>
-<ul>
+    <content><![CDATA[<ul>
 <li>由于使用工厂方法创建的对象，使用的构造函数都是Object</li>
 <li>无法区分出多种不同的对象所以才有下文</li>
 </ul>
+<span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function createDog(name,age)&#123;</span><br><span class="line">	var obj = new Object();</span><br><span class="line">	obj.name = name;</span><br><span class="line">	obj.age = age;</span><br><span class="line">	obj.sayHello = function()&#123;</span><br><span class="line">		alert(”汪汪”);</span><br><span class="line">	&#125;;</span><br><span class="line">	return obj;</span><br><span class="line">&#125;</span><br><span class="line">var dog = createDog(”旺财”,3);</span><br></pre></td></tr></table></figure>
+
 <hr>
-<h4>-----正篇开始</h4>
-- 创建一个构造函数，专门用来创建Person对象
-    构造函数就是一个普通的函数，创建方式和普通函数没有区别
-    不同的是构造函数习惯上首字母大写
-
+<p><strong>—–正篇开始</strong></p>
 <ul>
-<li>构造函数和普通函数的区别就是调用方式的不同<br>  普通函数是直接调用，而构造函数需要使用new关键字来调用</li>
+<li><p>创建一个构造函数，专门用来创建Person对象<br>  构造函数就是一个普通的函数，创建方式和普通函数没有区别<br>  不同的是构造函数习惯上首字母大写</p>
+</li>
+<li><p>构造函数和普通函数的区别就是调用方式的不同<br>  普通函数是直接调用，而构造函数需要使用new关键字来调用</p>
+</li>
 </ul>
-<h5>构造函数的执行流程：</h5>
-1. 立刻创建一个新对象
-2. 将新建的对象设置为函数中this,在构造函数中可以使用this来引用新建的对象
-3. 逐行执行函数中的代码
-4. 将新建的对象作为返回值返回
+<h5>构造函数的执行流程</h5>
 
+<ol>
+<li>立刻创建一个新对象</li>
+<li>将新建的对象设置为函数中this,在构造函数中可以使用this来引用新建的对象</li>
+<li>逐行执行函数中的代码</li>
+<li>将新建的对象作为返回值返回</li>
+</ol>
 <ul>
 <li>使用同一个构造函数创建的对象我们成为一类对象，也将一个构造函数称为一个类</li>
 <li>我们将通过一个构造函数创建的对象，称为类的实例</li>
 </ul>
-<h5>this的情况：</h5>
-1. 当以函数形式调用时，this是window
-2. 当以方法形式调用时，谁调用方法this就是谁
-3. 当以构造函数的形式调用时，this就是新创建的那个对象
+<h5>this的情况</h5>
 
+<ol>
+<li>当以函数形式调用时，this是window</li>
+<li>当以方法形式调用时，谁调用方法this就是谁</li>
+<li>当以构造函数的形式调用时，this就是新创建的那个对象</li>
+</ol>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Person(name,age,gender)&#123;</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">	this.gender = gender;</span><br><span class="line">	this.sayName = function()&#123;</span><br><span class="line">		alert(this.name);</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br><span class="line">var per = new Person(”白骨精”,16,”女”);</span><br><span class="line">var per2 = new Person(”猪八戒”,38,”男”);</span><br><span class="line">console.log(per);</span><br></pre></td></tr></table></figure>
 
 <h5>使用instanceof可以检查一个对象是否是一个类的实例</h5>
 
 <p>语法：</p>
-<pre><code>    对象 instanceof 构造函数
-    console.log(per instanceof Person);
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">对象 instanceof 构造函数</span><br><span class="line">console.log(per instanceof Person);</span><br></pre></td></tr></table></figure>
 <p>所有的对象都是object的后代，所以任何对象和Object做instanceof检查时都会返回true</p>
 ]]></content>
       <categories>
@@ -379,11 +414,16 @@ var result = alert(&quot;hello&quot;);
     <title>17 构造函数修改</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/</url>
     <content><![CDATA[<h4>创建一个Person构造函数</h4>
-- 在Person构造函数中，为每一个对象都添加一个sayName方法
-- 目前我们的方法是在构造函数内部创建的
-    - 也就是构造函数每执行一次就会创建一个新的sayName方法
-    - 也就是所有实例的sayName都是唯一的  
 
+<ul>
+<li>在Person构造函数中，为每一个对象都添加一个sayName方法</li>
+<li>目前我们的方法是在构造函数内部创建的<ul>
+<li>也就是构造函数每执行一次就会创建一个新的sayName方法</li>
+<li>也就是所有实例的sayName都是唯一的</li>
+</ul>
+</li>
+</ul>
+<span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Person(name,age,gender)&#123;</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">	this.gender = gender;</span><br><span class="line">	//向对象中添加一个方法：</span><br><span class="line">	//this.sayName = function()&#123;</span><br><span class="line">		alert(“大家好，我是”+this.name);</span><br><span class="line">	//&#125;;</span><br><span class="line">	this.sayName = fun;  //提升性能</span><br><span class="line">&#125;</span><br><span class="line">//将sayName方法在全局作用域中定义</span><br><span class="line">function fun()&#123;</span><br><span class="line">	alert(”大家好，我是”+this.name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
         <category>JavaScript学习之路</category>
@@ -395,10 +435,12 @@ var result = alert(&quot;hello&quot;);
   <entry>
     <title>15 使用工厂方法创建对象</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/</url>
-    <content><![CDATA[<h4>1、正常情况下是按个创建对象，</h4>
+    <content><![CDATA[<h5>逐个创建对象</h5>
+正常情况下是逐个创建对象，过于繁琐，才有了工厂模式创建对象（即封装函数）
+<span id="more"></span>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">	name:&quot;孙悟空&quot;,</span><br><span class="line">	age:18,</span><br><span class="line">	gender:&quot;男&quot;,</span><br><span class="line">	sayName:function()&#123;</span><br><span class="line">		alert(this.name);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h4>2、下面是工厂方法创建对象</h4>
+<h5>工厂方法创建对象</h5>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function creatPerson(name,age,gender)&#123;</span><br><span class="line">	var obj = new Object();</span><br><span class="line">	obj.name = name;</span><br><span class="line">	obj.age = age;</span><br><span class="line">	obj.gender = gender;</span><br><span class="line">	obj.sayName = function()&#123;</span><br><span class="line">		alert(this.name);</span><br><span class="line">	&#125;;</span><br><span class="line">	return obj;</span><br><span class="line">&#125;</span><br><span class="line">var obj2 = creatPerson(&quot;猪八戒&quot;,28,&quot;男&quot;);</span><br><span class="line">var obj3 = creatPerson(&quot;沙和尚&quot;,38,&quot;男&quot;);</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
@@ -412,29 +454,20 @@ var result = alert(&quot;hello&quot;);
     <title>18 原型对象</title>
     <url>/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/</url>
     <content><![CDATA[<h4> 原型prototype </h4>
-- 我们所创建的每个函数，解析器都会向函数中添加一个属性prototype
-    - 这个属性对应着一个对象，这个对象就是我们所谓的原型对象
 
 
 <ul>
+<li>我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象<span id="more"></span></li>
 <li>如果函数作为普通函数调用prototype没有任何作用</li>
-</ul>
-<ul>
 <li>当函数以构造函数的形式调用时，他所创建的对象中都会有一个隐含的属性，<ul>
 <li>指向该构造函数的原型对象，我们可以通过__proto__来访问该属性</li>
 </ul>
 </li>
-</ul>
-<ul>
 <li>原型对象就相当于一个公共的区域，所有同一个类的实例都可以访问到这个原型对象<ul>
 <li>我们可以将对象中共有的内容，统一设置到原型对象中</li>
 </ul>
 </li>
-</ul>
-<ul>
 <li>当我们访问对象的一个属性或方法时，他会现在对象自身中寻找，如果没有则直接使用</li>
-</ul>
-<ul>
 <li>在创建构造函数时，可以将这些对象共有的属性和烦啊发，统一添加到构造函数的原型对象中，这样不用分别为每一个对象添加，也不会影响到全局作用域，就可以为每个对象都具有这些属性</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Person(name,age,gender)&#123;</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">	this.gender = gender;</span><br><span class="line">	//向对象中添加一个方法：</span><br><span class="line">	//this.sayName = function()&#123;</span><br><span class="line">		alert(&quot;大家好，我是&quot;+this.name);</span><br><span class="line">	//&#125;;</span><br><span class="line">	//this.sayName = fun;  //提升性能</span><br><span class="line">&#125;</span><br><span class="line">//将sayName方法在全局作用域中定义  ——————不会影响全局作用域</span><br><span class="line">Person.prototype.sayName = function()&#123;</span><br><span class="line">	alert(&quot;大家好，我是&quot;+this.name);</span><br><span class="line">&#125;</span><br><span class="line">var per = new Person(&quot;孙悟空&quot;,18,&quot;男&quot;);</span><br><span class="line">per.sayName(); 	</span><br></pre></td></tr></table></figure>]]></content>

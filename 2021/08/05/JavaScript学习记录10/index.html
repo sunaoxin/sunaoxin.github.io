@@ -114,15 +114,15 @@
 
 
 
-<meta name="description" content="###在JS中一共有两种作用域：####1、全局作用域  直接编写在script标签中的JS 代码，都在全局作用域 全局作用域在页面打开时创建，在页面关闭时销毁 在全局作用域中有一个全局对象window，  他代表的时一个浏览器窗口，我们可以直接使用 在全局作用域中：  创建的变量都会作为window对象的属性保存  创建的函数也会作为window对象的属性保存 全局作用域中的变量都是全局变量，在">
+<meta name="description" content="在JS中一共有两种作用域： 全局作用域   直接编写在script标签中的JS 代码，都在全局作用域 全局作用域在页面打开时创建，在页面关闭时销毁 在全局作用域中有一个全局对象window， 他代表的时一个浏览器窗口，我们可以直接使用   在全局作用域中： 创建的变量都会作为window对象的属性保存 创建的函数也会作为window对象的属性保存   全局作用域中的变量都是全局变量，在页面的任意部">
 <meta property="og:type" content="article">
 <meta property="og:title" content="10 全局作用域">
 <meta property="og:url" content="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9510/index.html">
 <meta property="og:site_name" content="OnlyWait&#39;s Blog">
-<meta property="og:description" content="###在JS中一共有两种作用域：####1、全局作用域  直接编写在script标签中的JS 代码，都在全局作用域 全局作用域在页面打开时创建，在页面关闭时销毁 在全局作用域中有一个全局对象window，  他代表的时一个浏览器窗口，我们可以直接使用 在全局作用域中：  创建的变量都会作为window对象的属性保存  创建的函数也会作为window对象的属性保存 全局作用域中的变量都是全局变量，在">
+<meta property="og:description" content="在JS中一共有两种作用域： 全局作用域   直接编写在script标签中的JS 代码，都在全局作用域 全局作用域在页面打开时创建，在页面关闭时销毁 在全局作用域中有一个全局对象window， 他代表的时一个浏览器窗口，我们可以直接使用   在全局作用域中： 创建的变量都会作为window对象的属性保存 创建的函数也会作为window对象的属性保存   全局作用域中的变量都是全局变量，在页面的任意部">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-08-05T14:39:17.027Z">
-<meta property="article:modified_time" content="2021-08-05T14:51:43.321Z">
+<meta property="article:modified_time" content="2021-08-06T03:40:19.756Z">
 <meta property="article:author" content="Sun Aoxin">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -332,7 +332,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -415,7 +415,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  439
+                  438
                 </span>
               
 
@@ -440,23 +440,35 @@
       
 
       
-        <p>###在JS中一共有两种作用域：<br>####1、全局作用域</p>
+        <h3>在JS中一共有两种作用域：</h3>
+<h4>全局作用域</h4>
+
 <ul>
 <li>直接编写在script标签中的JS 代码，都在全局作用域</li>
 <li>全局作用域在页面打开时创建，在页面关闭时销毁</li>
-<li>在全局作用域中有一个全局对象window，<br>  他代表的时一个浏览器窗口，我们可以直接使用</li>
-<li>在全局作用域中：<br>  创建的变量都会作为window对象的属性保存<br>  创建的函数也会作为window对象的属性保存</li>
+<li>在全局作用域中有一个全局对象window，<ul>
+<li>他代表的时一个浏览器窗口，我们可以直接使用</li>
+</ul>
+</li>
+<li>在全局作用域中：<ul>
+<li>创建的变量都会作为window对象的属性保存</li>
+<li>创建的函数也会作为window对象的属性保存</li>
+</ul>
+</li>
 <li>全局作用域中的变量都是全局变量，在页面的任意部分都可以被访问到</li>
 </ul>
+<span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var a = 10;</span><br><span class="line">function fun()&#123;</span><br><span class="line">	alert(&quot;fun函数执行了&quot;);</span><br><span class="line">&#125;</span><br><span class="line">console.log(window.a);</span><br><span class="line">window.fun();</span><br></pre></td></tr></table></figure>
-<p>#####！！！变量的声明提前</p>
+<h5>！！！变量的声明提前</h5>
+
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = 123;  //相当于 </span><br><span class="line">a = 123;   //也相当于 </span><br><span class="line">window.a = 123;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>变量的声明提前使用var关键字声明的变量，会在所有代码执行之前被声明，（但是不会被赋值）。<br>  例：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;a = &quot;+ a );</span><br><span class="line">   var = 123;    //var在调用中后声明，是可以执行，但是提示变量未定义</span><br></pre></td></tr></table></figure></li>
 <li>不使用var关键字的话，则变量不会被声明提前</li>
 </ul>
-<p>#####！！！函数的声明提前</p>
+<h5>！！！函数的声明提前</h5>
+
 <ul>
 <li>使用函数声明形式创建的函数function 函数(){}<br>  1.它会在所有的代码执行之前就会被创建，所以我们可以在函数声明前来调用函数<br>  2.使用函数表达式创建的函数，不会被声明提前，所以不能在声明前调用<ul>
 <li>会声明提前，而且可以在声明前调用：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function fun()&#123;</span><br><span class="line">		console.log(”我是一个fun函数”);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
@@ -593,10 +605,23 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/wb4hgcasiet-lp.jpeg"
+                alt="" />
             
               <p class="site-author-name" itemprop="name"></p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -677,6 +702,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">在JS中一共有两种作用域：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">全局作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.1.1.</span> <span class="nav-text">！！！变量的声明提前</span></a></li><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.1.2.</span> <span class="nav-text">！！！函数的声明提前</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

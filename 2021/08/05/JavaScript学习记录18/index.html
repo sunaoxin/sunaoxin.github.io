@@ -114,15 +114,15 @@
 
 
 
-<meta name="description" content="原型prototype  - 我们所创建的每个函数，解析器都会向函数中添加一个属性prototype     - 这个属性对应着一个对象，这个对象就是我们所谓的原型对象    如果函数作为普通函数调用prototype没有任何作用   当函数以构造函数的形式调用时，他所创建的对象中都会有一个隐含的属性， 指向该构造函数的原型对象，我们可以通过__proto__来访问该属性     原型对象就相当">
+<meta name="description" content="原型prototype     我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象">
 <meta property="og:type" content="article">
 <meta property="og:title" content="18 原型对象">
 <meta property="og:url" content="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/index.html">
 <meta property="og:site_name" content="OnlyWait&#39;s Blog">
-<meta property="og:description" content="原型prototype  - 我们所创建的每个函数，解析器都会向函数中添加一个属性prototype     - 这个属性对应着一个对象，这个对象就是我们所谓的原型对象    如果函数作为普通函数调用prototype没有任何作用   当函数以构造函数的形式调用时，他所创建的对象中都会有一个隐含的属性， 指向该构造函数的原型对象，我们可以通过__proto__来访问该属性     原型对象就相当">
+<meta property="og:description" content="原型prototype     我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-08-05T15:08:53.477Z">
-<meta property="article:modified_time" content="2021-08-05T15:30:55.276Z">
+<meta property="article:modified_time" content="2021-08-06T03:13:24.739Z">
 <meta property="article:author" content="Sun Aoxin">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -332,7 +332,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -441,29 +441,20 @@
 
       
         <h4> 原型prototype </h4>
-- 我们所创建的每个函数，解析器都会向函数中添加一个属性prototype
-    - 这个属性对应着一个对象，这个对象就是我们所谓的原型对象
 
 
 <ul>
+<li>我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象<span id="more"></span></li>
 <li>如果函数作为普通函数调用prototype没有任何作用</li>
-</ul>
-<ul>
 <li>当函数以构造函数的形式调用时，他所创建的对象中都会有一个隐含的属性，<ul>
 <li>指向该构造函数的原型对象，我们可以通过__proto__来访问该属性</li>
 </ul>
 </li>
-</ul>
-<ul>
 <li>原型对象就相当于一个公共的区域，所有同一个类的实例都可以访问到这个原型对象<ul>
 <li>我们可以将对象中共有的内容，统一设置到原型对象中</li>
 </ul>
 </li>
-</ul>
-<ul>
 <li>当我们访问对象的一个属性或方法时，他会现在对象自身中寻找，如果没有则直接使用</li>
-</ul>
-<ul>
 <li>在创建构造函数时，可以将这些对象共有的属性和烦啊发，统一添加到构造函数的原型对象中，这样不用分别为每一个对象添加，也不会影响到全局作用域，就可以为每个对象都具有这些属性</li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">function Person(name,age,gender)&#123;</span><br><span class="line">	this.name = name;</span><br><span class="line">	this.age = age;</span><br><span class="line">	this.gender = gender;</span><br><span class="line">	//向对象中添加一个方法：</span><br><span class="line">	//this.sayName = function()&#123;</span><br><span class="line">		alert(&quot;大家好，我是&quot;+this.name);</span><br><span class="line">	//&#125;;</span><br><span class="line">	//this.sayName = fun;  //提升性能</span><br><span class="line">&#125;</span><br><span class="line">//将sayName方法在全局作用域中定义  ——————不会影响全局作用域</span><br><span class="line">Person.prototype.sayName = function()&#123;</span><br><span class="line">	alert(&quot;大家好，我是&quot;+this.name);</span><br><span class="line">&#125;</span><br><span class="line">var per = new Person(&quot;孙悟空&quot;,18,&quot;男&quot;);</span><br><span class="line">per.sayName(); 	</span><br></pre></td></tr></table></figure>
@@ -604,6 +595,10 @@
       <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/wb4hgcasiet-lp.jpeg"
+                alt="" />
             
               <p class="site-author-name" itemprop="name"></p>
               <p class="site-description motion-element" itemprop="description"></p>

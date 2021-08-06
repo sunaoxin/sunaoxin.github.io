@@ -114,15 +114,15 @@
 
 
 
-<meta name="description" content="####2、函数作用域  调用函数时创建的函数作用域，函数执行完毕后，函数作用域销毁  每调用一次函数，就会创建一个新的函数作用域，他们之间是相互独立的  在函数作用域中可以访问到全局作用域的变量  在全局作用域中，无法访问到函数作用域的变量  在函数作用域中操作一个变量，会在自身作用域中寻找   § 如果有就直接使用，如果没有，就在上一级作用域寻找。  § 如果全局作用域中依然没有找到，则报错R">
+<meta name="description" content="函数作用域   调用函数时创建的函数作用域，函数执行完毕后，函数作用域销毁 每调用一次函数，就会创建一个新的函数作用域，他们之间是相互独立的 在函数作用域中可以访问到全局作用域的变量  在全局作用域中，无法访问到函数作用域的变量 在函数作用域中操作一个变量，会在自身作用域中寻找  § 如果有就直接使用，如果没有，就在上一级作用域寻找。  § 如果全局作用域中依然没有找到，则报错ReferenceE">
 <meta property="og:type" content="article">
 <meta property="og:title" content="11 函数作用域">
 <meta property="og:url" content="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9511/index.html">
 <meta property="og:site_name" content="OnlyWait&#39;s Blog">
-<meta property="og:description" content="####2、函数作用域  调用函数时创建的函数作用域，函数执行完毕后，函数作用域销毁  每调用一次函数，就会创建一个新的函数作用域，他们之间是相互独立的  在函数作用域中可以访问到全局作用域的变量  在全局作用域中，无法访问到函数作用域的变量  在函数作用域中操作一个变量，会在自身作用域中寻找   § 如果有就直接使用，如果没有，就在上一级作用域寻找。  § 如果全局作用域中依然没有找到，则报错R">
+<meta property="og:description" content="函数作用域   调用函数时创建的函数作用域，函数执行完毕后，函数作用域销毁 每调用一次函数，就会创建一个新的函数作用域，他们之间是相互独立的 在函数作用域中可以访问到全局作用域的变量  在全局作用域中，无法访问到函数作用域的变量 在函数作用域中操作一个变量，会在自身作用域中寻找  § 如果有就直接使用，如果没有，就在上一级作用域寻找。  § 如果全局作用域中依然没有找到，则报错ReferenceE">
 <meta property="og:locale">
 <meta property="article:published_time" content="2021-08-05T14:47:18.058Z">
-<meta property="article:modified_time" content="2021-08-05T14:51:44.758Z">
+<meta property="article:modified_time" content="2021-08-06T03:40:35.833Z">
 <meta property="article:author" content="Sun Aoxin">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -332,7 +332,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -415,7 +415,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  471
+                  470
                 </span>
               
 
@@ -440,23 +440,20 @@
       
 
       
-        <p>####2、函数作用域</p>
+        <h4>函数作用域</h4>
+
 <ul>
-<li><p>调用函数时创建的函数作用域，函数执行完毕后，函数作用域销毁</p>
-</li>
-<li><p>每调用一次函数，就会创建一个新的函数作用域，他们之间是相互独立的</p>
-</li>
-<li><p>在函数作用域中可以访问到全局作用域的变量<br>  在全局作用域中，无法访问到函数作用域的变量</p>
-</li>
-<li><p>在函数作用域中操作一个变量，会在自身作用域中寻找</p>
-<p>  § 如果有就直接使用，如果没有，就在上一级作用域寻找。<br>  § 如果全局作用域中依然没有找到，则报错ReferenceError</p>
-</li>
-<li><p>在函数中要访问全局变量可以使用window对象。  例如window.a</p>
-</li>
+<li>调用函数时创建的函数作用域，函数执行完毕后，函数作用域销毁</li>
+<li>每调用一次函数，就会创建一个新的函数作用域，他们之间是相互独立的</li>
+<li>在函数作用域中可以访问到全局作用域的变量<br>  在全局作用域中，无法访问到函数作用域的变量</li>
+<li>在函数作用域中操作一个变量，会在自身作用域中寻找<br>  § 如果有就直接使用，如果没有，就在上一级作用域寻找。<br>  § 如果全局作用域中依然没有找到，则报错ReferenceError</li>
+<li>在函数中要访问全局变量可以使用window对象。  例如window.a</li>
 </ul>
+<span id="more"></span>    
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var a = 10;  //创建一个变量</span><br><span class="line">function fun()&#123;</span><br><span class="line">	var a = &quot;我是函数中的变量a&quot;;</span><br><span class="line">	var b = 20;</span><br><span class="line">	console.log(&quot;a = &quot;+ a);  //可以访问到外部的a</span><br><span class="line">&#125;</span><br><span class="line">fun();</span><br><span class="line">console.log(&quot;b = &quot;+ b);  //访问不到b</span><br></pre></td></tr></table></figure>
 
-<p>#####！！函数作用域也有声明提前</p>
+<h5>！！函数作用域也有声明提前</h5>
+    
 <ul>
 <li>使用var关键字声明的变量，会在函数中所有的代码执行之前被声明</li>
 <li>函数声明也会在函数中所有的代码执行之前执行</li>
@@ -590,10 +587,23 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/wb4hgcasiet-lp.jpeg"
+                alt="" />
             
               <p class="site-author-name" itemprop="name"></p>
               <p class="site-description motion-element" itemprop="description"></p>
@@ -674,6 +684,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">函数作用域</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">！！函数作用域也有声明提前</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
