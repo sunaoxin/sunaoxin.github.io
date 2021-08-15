@@ -31,7 +31,7 @@
 <meta property="og:description" content="在JS中一共有两种作用域： 全局作用域   直接编写在script标签中的JS 代码，都在全局作用域 全局作用域在页面打开时创建，在页面关闭时销毁 在全局作用域中有一个全局对象window， 他代表的时一个浏览器窗口，我们可以直接使用   在全局作用域中： 创建的变量都会作为window对象的属性保存 创建的函数也会作为window对象的属性保存   全局作用域中的变量都是全局变量，在页面的任意部">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-08-05T14:39:17.027Z">
-<meta property="article:modified_time" content="2021-08-06T03:40:19.756Z">
+<meta property="article:modified_time" content="2021-08-15T05:32:32.639Z">
 <meta property="article:author" content="Sun Aoxin">
 <meta property="article:tag" content="JavaScript">
 <meta name="twitter:card" content="summary">
@@ -208,7 +208,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-06 11:40:19" itemprop="dateModified" datetime="2021-08-06T11:40:19+08:00">2021-08-06</time>
+                <time title="修改时间：2021-08-15 13:32:32" itemprop="dateModified" datetime="2021-08-15T13:32:32+08:00">2021-08-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -256,21 +256,21 @@
 <li>全局作用域中的变量都是全局变量，在页面的任意部分都可以被访问到</li>
 </ul>
 <span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var a = 10;</span><br><span class="line">function fun()&#123;</span><br><span class="line">	alert(&quot;fun函数执行了&quot;);</span><br><span class="line">&#125;</span><br><span class="line">console.log(window.a);</span><br><span class="line">window.fun();</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">10</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	alert(<span class="string">&quot;fun函数执行了&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">window</span>.a);</span><br><span class="line"><span class="built_in">window</span>.fun();</span><br></pre></td></tr></table></figure>
 <h5>！！！变量的声明提前</h5>
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var a = 123;  //相当于 </span><br><span class="line">a = 123;   //也相当于 </span><br><span class="line">window.a = 123;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">123</span>;  <span class="comment">//相当于 </span></span><br><span class="line">a = <span class="number">123</span>;   <span class="comment">//也相当于 </span></span><br><span class="line"><span class="built_in">window</span>.a = <span class="number">123</span>;</span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>变量的声明提前使用var关键字声明的变量，会在所有代码执行之前被声明，（但是不会被赋值）。<br>  例：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">console.log(&quot;a = &quot;+ a );</span><br><span class="line">   var = 123;    //var在调用中后声明，是可以执行，但是提示变量未定义</span><br></pre></td></tr></table></figure></li>
+<li>变量的声明提前使用var关键字声明的变量，会在所有代码执行之前被声明，（但是不会被赋值）。<br>  例：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="string">&quot;a = &quot;</span>+ a );</span><br><span class="line">   <span class="keyword">var</span> = <span class="number">123</span>;    <span class="comment">//var在调用中后声明，是可以执行，但是提示变量未定义</span></span><br></pre></td></tr></table></figure></li>
 <li>不使用var关键字的话，则变量不会被声明提前</li>
 </ul>
 <h5>！！！函数的声明提前</h5>
 
 <ul>
 <li>使用函数声明形式创建的函数function 函数(){}<br>  1.它会在所有的代码执行之前就会被创建，所以我们可以在函数声明前来调用函数<br>  2.使用函数表达式创建的函数，不会被声明提前，所以不能在声明前调用<ul>
-<li>会声明提前，而且可以在声明前调用：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function fun()&#123;</span><br><span class="line">		console.log(”我是一个fun函数”);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>不会声明提前，不能在声明前调用：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var fun2 = function()&#123;</span><br><span class="line">		console.log(”我是一个fun2函数”);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>会声明提前，而且可以在声明前调用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(”我是一个fun函数”);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>不会声明提前，不能在声明前调用：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fun2 = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">		<span class="built_in">console</span>.log(”我是一个fun2函数”);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
 </li>
 </ul>

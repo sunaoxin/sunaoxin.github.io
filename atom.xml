@@ -6,7 +6,7 @@
   <link href="https://qaaa.top/atom.xml" rel="self"/>
   
   <link href="https://qaaa.top/"/>
-  <updated>2021-08-06T05:28:12.788Z</updated>
+  <updated>2021-08-15T05:31:32.473Z</updated>
   <id>https://qaaa.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/</id>
     <published>2021-08-05T15:08:53.477Z</published>
-    <updated>2021-08-06T05:28:12.788Z</updated>
+    <updated>2021-08-15T05:31:32.473Z</updated>
     
     
     <summary type="html">&lt;h4&gt; 原型prototype &lt;/h4&gt;
@@ -45,7 +45,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/</id>
     <published>2021-08-05T15:07:00.111Z</published>
-    <updated>2021-08-06T03:14:06.428Z</updated>
+    <updated>2021-08-15T05:33:33.827Z</updated>
     
     
     <summary type="html">&lt;h4&gt;创建一个Person构造函数&lt;/h4&gt;
@@ -73,7 +73,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/</id>
     <published>2021-08-05T14:57:38.969Z</published>
-    <updated>2021-08-06T03:44:01.243Z</updated>
+    <updated>2021-08-15T05:33:42.826Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -95,7 +95,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/</id>
     <published>2021-08-05T14:55:48.436Z</published>
-    <updated>2021-08-06T03:42:25.847Z</updated>
+    <updated>2021-08-15T05:33:48.864Z</updated>
     
     
     <summary type="html">&lt;h5&gt;逐个创建对象&lt;/h5&gt;
@@ -115,7 +115,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9514/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9514/</id>
     <published>2021-08-05T14:54:45.405Z</published>
-    <updated>2021-08-06T03:16:02.628Z</updated>
+    <updated>2021-08-15T05:33:56.202Z</updated>
     
     
     <summary type="html">&lt;h5&gt;this补充说明--&gt;&lt;/h5&gt;</summary>
@@ -173,7 +173,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9511/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9511/</id>
     <published>2021-08-05T14:47:18.058Z</published>
-    <updated>2021-08-06T03:40:35.833Z</updated>
+    <updated>2021-08-15T05:34:04.751Z</updated>
     
     
     <summary type="html">&lt;h4&gt;函数作用域&lt;/h4&gt;
@@ -200,7 +200,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9510/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9510/</id>
     <published>2021-08-05T14:39:17.027Z</published>
-    <updated>2021-08-06T03:40:19.756Z</updated>
+    <updated>2021-08-15T05:32:32.639Z</updated>
     
     
     <summary type="html">&lt;h3&gt;在JS中一共有两种作用域：&lt;/h3&gt;
@@ -235,11 +235,11 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9509/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9509/</id>
     <published>2021-08-05T14:32:19.896Z</published>
-    <updated>2021-08-06T03:39:39.958Z</updated>
+    <updated>2021-08-15T05:32:18.714Z</updated>
     
     
     <summary type="html">&lt;h5&gt;对象的属性值可以是任何的数据类型，也可以是函数&lt;/h5&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj = new Object();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.name = “孙悟空”;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.age = 18;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.sayName = function()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	console.log(obj.name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;function fun()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	console.log(obj.name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Object&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.name = “孙悟空”;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.age = &lt;span class=&quot;number&quot;&gt;18&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.sayName = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(obj.name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fun&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(obj.name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -255,7 +255,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9508/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9508/</id>
     <published>2021-08-05T14:27:54.294Z</published>
-    <updated>2021-08-06T03:26:35.035Z</updated>
+    <updated>2021-08-15T05:32:09.178Z</updated>
     
     
     <summary type="html">&lt;h5&gt;立即执行函数：&lt;/h5&gt;
@@ -276,7 +276,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9507/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9507/</id>
     <published>2021-08-05T14:25:12.476Z</published>
-    <updated>2021-08-06T03:28:26.385Z</updated>
+    <updated>2021-08-15T05:34:28.578Z</updated>
     
     
     <summary type="html">&lt;h5&gt;使用break可以推出当前的循环&lt;/h5&gt;
@@ -286,7 +286,7 @@
 &lt;li&gt;使用return可以结束整个函数&lt;/li&gt;
 &lt;li&gt;返回值可以时任意的数据类型，也可以是一个对象，也可以是一个函数&lt;br&gt;  &lt;strong&gt;注意：return fun3; 是返回一个函数&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;return fun3();是返回一个函数的执行结果&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; fun3();是返回一个函数的执行结果&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -302,13 +302,13 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9506/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9506/</id>
     <published>2021-08-05T14:19:09.070Z</published>
-    <updated>2021-08-06T03:29:54.662Z</updated>
+    <updated>2021-08-15T05:34:33.726Z</updated>
     
     
     <summary type="html">&lt;h5&gt;实参可以是一个对象，也可以是一个函数&lt;/h5&gt;
 
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function mianji()&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	return 3.14*r*r;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function sayHello (o)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	console.log(”我是”+o.name+“，今年我”+o.age+“岁，我住在”+o.address);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//sayHello（“猪八戒”，28，“高老庄”）；&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;mianji&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3.14&lt;/span&gt;*r*r;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sayHello&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;o&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(”我是”+o.name+“，今年我”+o.age+“岁，我住在”+o.address);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//sayHello（“猪八戒”，28，“高老庄”）；&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -324,7 +324,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9505/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9505/</id>
     <published>2021-08-05T14:16:24.613Z</published>
-    <updated>2021-08-06T03:30:20.084Z</updated>
+    <updated>2021-08-15T05:34:36.502Z</updated>
     
     
     <summary type="html">&lt;h5&gt;函数返回值&lt;/h5&gt;
@@ -351,7 +351,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9504/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9504/</id>
     <published>2021-08-05T14:13:30.079Z</published>
-    <updated>2021-08-06T03:32:10.272Z</updated>
+    <updated>2021-08-15T05:34:38.577Z</updated>
     
     
     <summary type="html">&lt;h5&gt;函数参数&lt;/h5&gt;
@@ -372,7 +372,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9503/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9503/</id>
     <published>2021-08-05T14:06:55.428Z</published>
-    <updated>2021-08-06T03:34:32.848Z</updated>
+    <updated>2021-08-15T05:34:53.615Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -394,12 +394,12 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/</id>
     <published>2021-08-05T05:14:32.809Z</published>
-    <updated>2021-08-06T03:35:47.621Z</updated>
+    <updated>2021-08-15T05:34:23.489Z</updated>
     
     
     <summary type="html">&lt;h5&gt;使用对象字面量来创建一个对象：&lt;/h5&gt;
 
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var obj = &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;等同于var obj = new&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj = &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;等同于&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -415,7 +415,7 @@
     <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/"/>
     <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/</id>
     <published>2021-08-05T03:42:26.311Z</published>
-    <updated>2021-08-06T03:36:48.559Z</updated>
+    <updated>2021-08-15T05:36:34.231Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -438,7 +438,7 @@
     <link href="https://qaaa.top/2021/07/29/xiaoai/"/>
     <id>https://qaaa.top/2021/07/29/xiaoai/</id>
     <published>2021-07-29T13:58:35.959Z</published>
-    <updated>2021-08-06T10:13:38.735Z</updated>
+    <updated>2021-08-15T05:35:16.866Z</updated>
     
     
       
