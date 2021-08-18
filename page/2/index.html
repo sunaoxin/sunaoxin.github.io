@@ -170,7 +170,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9509/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9524/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -184,7 +184,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9509/" class="post-title-link" itemprop="url">09 JS基础_方法</a>
+            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9524/" class="post-title-link" itemprop="url">24 数组遍历</a>
         </h2>
 
         <div class="post-meta">
@@ -198,16 +198,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-08-05 22:32:19" itemprop="dateCreated datePublished" datetime="2021-08-05T22:32:19+08:00">2021-08-05</time>
+              <time title="创建时间：2021-08-18 21:06:31 / 修改时间：22:51:58" itemprop="dateCreated datePublished" datetime="2021-08-18T21:06:31+08:00">2021-08-18</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-15 13:32:18" itemprop="dateModified" datetime="2021-08-15T13:32:18+08:00">2021-08-15</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -229,16 +223,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h5>对象的属性值可以是任何的数据类型，也可以是函数</h5>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line">obj.name = “孙悟空”;</span><br><span class="line">obj.age = <span class="number">18</span>;</span><br><span class="line">obj.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(obj.name);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(obj.name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9509/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <ul>
+<li>创建一个数组</li>
+<li>所谓的遍历数组，就是将数组中所有的元素都取出来<br>用for循环</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">&quot;孙悟空&quot;</span>,<span class="string">&quot;猪八戒&quot;</span>,<span class="string">&quot;沙和尚&quot;</span>];</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">this</span>.name = name;</span><br><span class="line">	<span class="built_in">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line">Person.prototype.toString = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;name =&quot;</span>+name +<span class="string">&quot;age = &quot;</span>+age;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> per = <span class="keyword">new</span> Person(<span class="string">&quot;孙悟空&quot;</span>,<span class="number">18</span>);</span><br><span class="line"><span class="keyword">var</span> per = <span class="keyword">new</span> Person(<span class="string">&quot;猪八戒&quot;</span>,<span class="number">28</span>);</span><br><span class="line"><span class="keyword">var</span> per = <span class="keyword">new</span> Person(<span class="string">&quot;红孩儿&quot;</span>,<span class="number">38</span>);</span><br><span class="line"><span class="keyword">var</span> per = <span class="keyword">new</span> Person(<span class="string">&quot;二郎神&quot;</span>,<span class="number">48</span>);</span><br><span class="line"><span class="keyword">var</span> perArr = [per,per2,per3,per4,per5];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getAdult</span>(<span class="params">arr</span>)</span>&#123;</span><br><span class="line">	<span class="keyword">var</span> newarr = [];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>;i &lt; arr.length;i++)&#123;</span><br><span class="line">		<span class="keyword">var</span> p = arr[i];</span><br><span class="line">		<span class="keyword">if</span>(p.age &gt;= <span class="number">18</span>)&#123;</span><br><span class="line">			newarr.push(p);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> newarr;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> result = getAdult(perArr);</span><br><span class="line"><span class="built_in">console</span>.log(result);</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -257,7 +248,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9508/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9523/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -271,7 +262,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9508/" class="post-title-link" itemprop="url">08 立即执行函数</a>
+            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9523/" class="post-title-link" itemprop="url">23 数组的四个方法</a>
         </h2>
 
         <div class="post-meta">
@@ -285,16 +276,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-08-05 22:27:54" itemprop="dateCreated datePublished" datetime="2021-08-05T22:27:54+08:00">2021-08-05</time>
+              <time title="创建时间：2021-08-18 21:06:31 / 修改时间：22:50:41" itemprop="dateCreated datePublished" datetime="2021-08-18T21:06:31+08:00">2021-08-18</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-15 13:32:09" itemprop="dateModified" datetime="2021-08-15T13:32:09+08:00">2021-08-15</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -316,293 +301,45 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h5>立即执行函数：</h5>
-
-<p><code>函数对象()</code></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9508/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9507/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
-      <meta itemprop="name" content="Sun Aoxin">
-      <meta itemprop="description" content="OnlyWait">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="OnlyWait's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9507/" class="post-title-link" itemprop="url">07 返回值的类型</a>
-        </h2>
-
-        <div class="post-meta">
-
-            <div class="post-meta">
-<!-- 置顶插件添加 开始 -->
-
-<!-- 置顶插件添加 结束 -->
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-08-05 22:25:12" itemprop="dateCreated datePublished" datetime="2021-08-05T22:25:12+08:00">2021-08-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-15 13:34:28" itemprop="dateModified" datetime="2021-08-15T13:34:28+08:00">2021-08-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h5>使用break可以推出当前的循环</h5>
+          <ul>
+<li>创建一个数组</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">&quot;孙悟空&quot;</span>,<span class="string">&quot;猪八戒&quot;</span>,<span class="string">&quot;沙和尚&quot;</span>];</span><br></pre></td></tr></table></figure>
+<h5>push()</h5>
 
 <ul>
-<li>使用continue可以跳出当次循环</li>
-<li>使用return可以结束整个函数</li>
-<li>返回值可以时任意的数据类型，也可以是一个对象，也可以是一个函数<br>  <strong>注意：return fun3; 是返回一个函数</strong></li>
+<li>该方法可以向数组的末尾添加一个或多个元素，并返回数组的新长度<ul>
+<li>可以将要添加的元素作为方法的参数传递<ul>
+<li>这样这些元素将会自动添加到数组的末尾</li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> fun3();是返回一个函数的执行结果</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9507/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
+</li>
+<li>该方法会将数组的新长度作为返回值返回</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = arr.push(<span class="string">&quot;唐僧&quot;</span>,<span class="string">&quot;蜘蛛精&quot;</span>,<span class="string">&quot;白骨精&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(result);  /输出<span class="number">6</span>，即长度为<span class="number">6</span></span><br></pre></td></tr></table></figure>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9506/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
-      <meta itemprop="name" content="Sun Aoxin">
-      <meta itemprop="description" content="OnlyWait">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="OnlyWait's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9506/" class="post-title-link" itemprop="url">06 实参可以是任何值</a>
-        </h2>
-
-        <div class="post-meta">
-
-            <div class="post-meta">
-<!-- 置顶插件添加 开始 -->
-
-<!-- 置顶插件添加 结束 -->
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-08-05 22:19:09" itemprop="dateCreated datePublished" datetime="2021-08-05T22:19:09+08:00">2021-08-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-15 13:34:33" itemprop="dateModified" datetime="2021-08-15T13:34:33+08:00">2021-08-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h5>实参可以是一个对象，也可以是一个函数</h5>
-
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">mianji</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">3.14</span>*r*r;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sayHello</span> (<span class="params">o</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(”我是”+o.name+“，今年我”+o.age+“岁，我住在”+o.address);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//sayHello（“猪八戒”，28，“高老庄”）；</span></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9506/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9505/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
-      <meta itemprop="name" content="Sun Aoxin">
-      <meta itemprop="description" content="OnlyWait">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="OnlyWait's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9505/" class="post-title-link" itemprop="url">05 函数的返回值</a>
-        </h2>
-
-        <div class="post-meta">
-
-            <div class="post-meta">
-<!-- 置顶插件添加 开始 -->
-
-<!-- 置顶插件添加 结束 -->
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-08-05 22:16:24" itemprop="dateCreated datePublished" datetime="2021-08-05T22:16:24+08:00">2021-08-05</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-15 13:34:36" itemprop="dateModified" datetime="2021-08-15T13:34:36+08:00">2021-08-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h5>函数返回值</h5>
+<h5>pop()</h5>
 
 <ul>
-<li>在函数中书写returnn语句，return后的值将会作为函数的执行结果返回</li>
-<li>可以定义一个变量来接受结果</li>
-<li>在函数中，return后的语句都不会执行</li>
-<li>如果return语句后不跟任何值相当于返回undefined</li>
-<li>return后可以跟任意数据类型</li>
+<li>该方法可以删除数组的最后一个元素，并将删除元素作为返回值返回</li>
 </ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9505/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.pop();</span><br><span class="line"><span class="keyword">var</span> result = arr.pop();</span><br></pre></td></tr></table></figure>
+
+<h5>unshift()</h5>
+
+<ul>
+<li>该方法向数组开头添加一个或多个元素，并返回新的数组长度<ul>
+<li>向前边插入元素以后，其他的元素索引会依次调整</li>
+</ul>
+</li>
+</ul>
+<h5>shift()</h5>
+    
+<ul>
+<li>删除数组的第一个元素，并将删除的元素作为返回值返回</li>
+</ul>
+
       
     </div>
 
@@ -621,7 +358,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9504/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9522/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -635,7 +372,311 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9504/" class="post-title-link" itemprop="url">04 函数的参数</a>
+            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9522/" class="post-title-link" itemprop="url">22 数组字面量</a>
+        </h2>
+
+        <div class="post-meta">
+
+            <div class="post-meta">
+<!-- 置顶插件添加 开始 -->
+
+<!-- 置顶插件添加 结束 -->
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-08-18 21:06:30 / 修改时间：22:48:03" itemprop="dateCreated datePublished" datetime="2021-08-18T21:06:30+08:00">2021-08-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>创建一个数组</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">arr[<span class="number">0</span>] = <span class="number">123</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用字面量来创建数组<br><code>语法：[]</code></li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用字面量创建数组时，可以在创建时就指定数组中的元素</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">10</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用构造函数创建数组时，也可以同时添加元素，将要添加的元素作为构造函数的传递参数</li>
+<li>元素之间使用 ，隔开</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr2 = <span class="keyword">new</span> <span class="built_in">Array</span>[<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>];</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>创建一个数组，数组中只有一个元素10</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr = [<span class="number">10</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>创建一个长度为10的数组</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr2 = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">10</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>数组中的元素可以是任意的数据类型</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr = [<span class="string">&quot;hello&quot;</span>,<span class="number">1</span>,<span class="literal">true</span>,<span class="literal">null</span>,<span class="literal">undefined</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>也可以是对象</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">name</span>:<span class="string">&quot;孙悟空&quot;</span>&#125;;</span><br><span class="line">arr[arr.length] = obj;</span><br><span class="line">arr = [&#123;<span class="attr">name</span>:<span class="string">&quot;猪八戒&quot;</span>&#125;,&#123;<span class="attr">name</span>:<span class="string">&quot;沙和尚&quot;</span>&#125;,&#123;<span class="attr">name</span>:<span class="string">&quot;孙悟空&quot;</span>&#125;];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>数组中放函数</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr = [<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;alert(<span class="number">1</span>)&#125;,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;alert(<span class="number">2</span>)&#125;];</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>数组中放数组，即二维数组</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr = [[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],[<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>],[<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>]];</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9521/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
+      <meta itemprop="name" content="Sun Aoxin">
+      <meta itemprop="description" content="OnlyWait">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="OnlyWait's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9521/" class="post-title-link" itemprop="url">21 数组</a>
+        </h2>
+
+        <div class="post-meta">
+
+            <div class="post-meta">
+<!-- 置顶插件添加 开始 -->
+
+<!-- 置顶插件添加 结束 -->
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-08-18 21:06:29 / 修改时间：22:47:41" itemprop="dateCreated datePublished" datetime="2021-08-18T21:06:29+08:00">2021-08-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>内建对象</li>
+<li>宿主对象</li>
+<li>自定义对象</li>
+</ul>
+<h5>数组（Array）</h5>
+
+<ul>
+<li>数组也是一个对象</li>
+<li>他和普通对象类似，也是用来储存一些值的</li>
+<li>不同的是：普通对象是使用字符串来作为属性名的<ul>
+<li>数组是使用数字来作为索引操作元素</li>
+</ul>
+</li>
+<li>索引：<ul>
+<li>从0开始的正数就是索引</li>
+</ul>
+</li>
+<li>数组的储存性能比普通对象要好，在开发中，我们经常使用数组来储存一些数据 </li>
+<li>向数组中添加元素<br><code>语法：数组[索引] = 值</code></li>
+</ul>
+<h5>获取数组长度</h5>
+
+<ul>
+<li>可以使用length属性来获取数组的长度（元素的个数）<br><code>语法：数组.length</code></li>
+</ul>
+<ul>
+<li>对于连续的数组，使用length可以获取到数组的长度（元素的个数）<ul>
+<li>对于非连续的数组，使用length会获取到数组的最大的索引+1</li>
+<li>尽量不要创建非连续的数组</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>如果修改length大于原长度，则多处部分空着<br>如果修改的length小于原长度，则多出的元素会删除</li>
+</ul>
+<ul>
+<li>向数组的最后一位置添加元素<br><code>语法：数组[数组.length] = 值</code></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9519/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
+      <meta itemprop="name" content="Sun Aoxin">
+      <meta itemprop="description" content="OnlyWait">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="OnlyWait's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9519/" class="post-title-link" itemprop="url">19 tostring()</a>
+        </h2>
+
+        <div class="post-meta">
+
+            <div class="post-meta">
+<!-- 置顶插件添加 开始 -->
+
+<!-- 置顶插件添加 结束 -->
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-08-18 19:23:24 / 修改时间：21:05:19" itemprop="dateCreated datePublished" datetime="2021-08-18T19:23:24+08:00">2021-08-18</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <ul>
+<li>当我们直接在页面中打印一个对象，实际上是输出对象的toString()方法的返回值</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,age,gender</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">this</span>.name = name;</span><br><span class="line">	<span class="built_in">this</span>.age = age;</span><br><span class="line">	<span class="built_in">this</span>.gender = gender;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//修改原型的toString</span></span><br><span class="line">Person.prototype.toString = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;person[name]=&quot;</span>+<span class="built_in">this</span>.name+<span class="string">&quot;,age = &quot;</span>+<span class="built_in">this</span>.age+<span class="string">&quot;,gender = &quot;</span>+gender;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> per = <span class="keyword">new</span> Person(<span class="string">&quot;孙悟空&quot;</span>,<span class="number">18</span>,<span class="string">&quot;男&quot;</span>);</span><br><span class="line"><span class="comment">//修改对象的toString</span></span><br><span class="line">per.toString = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;我是个快乐的小Person&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(per);         <span class="comment">//输出[object object]    console.log(per);相当于输出了per.toString()</span></span><br></pre></td></tr></table></figure>
+<p>等同于</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = per.toString();</span><br><span class="line"><span class="built_in">console</span>.log(result);     <span class="comment">//输出[object object]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(per.__proto__.__proto__.hasOwnProperty(<span class="string">&quot;toString&quot;</span>));     <span class="comment">//输出true toString存在于原型的原型中</span></span><br><span class="line"><span class="built_in">console</span>.log(per);        <span class="comment">//输出  我是个快乐的小Person</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
+      <meta itemprop="name" content="Sun Aoxin">
+      <meta itemprop="description" content="OnlyWait">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="OnlyWait's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/" class="post-title-link" itemprop="url">18 原型对象</a>
         </h2>
 
         <div class="post-meta">
@@ -650,14 +691,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-08-05 22:13:30" itemprop="dateCreated datePublished" datetime="2021-08-05T22:13:30+08:00">2021-08-05</time>
+              <time title="创建时间：2021-08-05 23:08:53" itemprop="dateCreated datePublished" datetime="2021-08-05T23:08:53+08:00">2021-08-05</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-15 13:34:38" itemprop="dateModified" datetime="2021-08-15T13:34:38+08:00">2021-08-15</time>
+                <time title="修改时间：2021-08-15 13:31:32" itemprop="dateModified" datetime="2021-08-15T13:31:32+08:00">2021-08-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -680,12 +721,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h5>函数参数</h5>
+          <h4> 原型prototype </h4>
 
-<p>定义一个用来求两个数和的函数，可以在函数的（）中指定一个或多个形参</p>
+
+<ul>
+<li>我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9504/#more" rel="contents">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -709,7 +753,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9503/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -723,7 +767,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9503/" class="post-title-link" itemprop="url">03 函数简介</a>
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/" class="post-title-link" itemprop="url">17 构造函数修改</a>
         </h2>
 
         <div class="post-meta">
@@ -738,14 +782,109 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-08-05 22:06:55" itemprop="dateCreated datePublished" datetime="2021-08-05T22:06:55+08:00">2021-08-05</time>
+              <time title="创建时间：2021-08-05 23:07:00" itemprop="dateCreated datePublished" datetime="2021-08-05T23:07:00+08:00">2021-08-05</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-15 13:34:53" itemprop="dateModified" datetime="2021-08-15T13:34:53+08:00">2021-08-15</time>
+                <time title="修改时间：2021-08-15 13:33:33" itemprop="dateModified" datetime="2021-08-15T13:33:33+08:00">2021-08-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4>创建一个Person构造函数</h4>
+
+<ul>
+<li>在Person构造函数中，为每一个对象都添加一个sayName方法</li>
+<li>目前我们的方法是在构造函数内部创建的<ul>
+<li>也就是构造函数每执行一次就会创建一个新的sayName方法</li>
+<li>也就是所有实例的sayName都是唯一的</li>
+</ul>
+</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
+      <meta itemprop="name" content="Sun Aoxin">
+      <meta itemprop="description" content="OnlyWait">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="OnlyWait's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/" class="post-title-link" itemprop="url">16 构造函数</a>
+        </h2>
+
+        <div class="post-meta">
+
+            <div class="post-meta">
+<!-- 置顶插件添加 开始 -->
+
+<!-- 置顶插件添加 结束 -->
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-08-05 22:57:38" itemprop="dateCreated datePublished" datetime="2021-08-05T22:57:38+08:00">2021-08-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-15 13:33:42" itemprop="dateModified" datetime="2021-08-15T13:33:42+08:00">2021-08-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -769,12 +908,12 @@
 
       
           <ul>
-<li>对象也是一个对象</li>
-<li>函数可以封装一些功能（代码），在需要时可以执行这些功能（代码）</li>
+<li>由于使用工厂方法创建的对象，使用的构造函数都是Object</li>
+<li>无法区分出多种不同的对象所以才有下文</li>
 </ul>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9503/#more" rel="contents">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -798,7 +937,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -812,7 +951,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/" class="post-title-link" itemprop="url">02 对象字面量</a>
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/" class="post-title-link" itemprop="url">15 使用工厂方法创建对象</a>
         </h2>
 
         <div class="post-meta">
@@ -827,14 +966,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-08-05 13:14:32" itemprop="dateCreated datePublished" datetime="2021-08-05T13:14:32+08:00">2021-08-05</time>
+              <time title="创建时间：2021-08-05 22:55:48" itemprop="dateCreated datePublished" datetime="2021-08-05T22:55:48+08:00">2021-08-05</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-15 13:34:23" itemprop="dateModified" datetime="2021-08-15T13:34:23+08:00">2021-08-15</time>
+                <time title="修改时间：2021-08-15 13:33:48" itemprop="dateModified" datetime="2021-08-15T13:33:48+08:00">2021-08-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -857,12 +996,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h5>使用对象字面量来创建一个对象：</h5>
-
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;&#125;;</span><br><span class="line">等同于<span class="keyword">var</span> obj = <span class="keyword">new</span></span><br></pre></td></tr></table></figure>
+          <h5>逐个创建对象</h5>
+正常情况下是逐个创建对象，过于繁琐，才有了工厂模式创建对象（即封装函数）
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/#more" rel="contents">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -886,7 +1024,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9514/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -900,7 +1038,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/" class="post-title-link" itemprop="url">01 基本数据类型和引用数据类型</a>
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9514/" class="post-title-link" itemprop="url">14 this关键字补充</a>
         </h2>
 
         <div class="post-meta">
@@ -915,14 +1053,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-08-05 11:42:26" itemprop="dateCreated datePublished" datetime="2021-08-05T11:42:26+08:00">2021-08-05</time>
+              <time title="创建时间：2021-08-05 22:54:45" itemprop="dateCreated datePublished" datetime="2021-08-05T22:54:45+08:00">2021-08-05</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-08-15 13:36:34" itemprop="dateModified" datetime="2021-08-15T13:36:34+08:00">2021-08-15</time>
+                <time title="修改时间：2021-08-15 13:33:56" itemprop="dateModified" datetime="2021-08-15T13:33:56+08:00">2021-08-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -945,14 +1083,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <ul>
-<li>当比较两个基本数据类型时，就是比值  </li>
-<li>当比较两个引用数据类型时，就是比较对象的内存地址  </li>
-<li>如果两个对象时一模一样的，但是地址不同，也会返回false  </li>
-</ul>
+          <h5>this补充说明--></h5>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/#more" rel="contents">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9514/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -975,7 +1109,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1045,7 +1179,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">19</span>
+          <span class="site-state-item-count">33</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

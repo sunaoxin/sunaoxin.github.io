@@ -6,7 +6,7 @@
   <link href="https://qaaa.top/atom.xml" rel="self"/>
   
   <link href="https://qaaa.top/"/>
-  <updated>2021-08-15T05:31:32.473Z</updated>
+  <updated>2021-08-18T13:09:54.569Z</updated>
   <id>https://qaaa.top/</id>
   
   <author>
@@ -15,6 +15,414 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>20 垃圾回收（GC）</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9520/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9520/</id>
+    <published>2021-08-18T13:06:44.101Z</published>
+    <updated>2021-08-18T13:09:54.569Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;程序运行过程中会产生垃圾，需要建立垃圾回收机制来回收垃圾&lt;/li&gt;
+&lt;li&gt;当一个对象没有任何的变量或属性对他进行应用，此时他将永远无法操作该对象&lt;/li&gt;
+&lt;li&gt;此时这种对象就是垃圾，会占用大量内存空间，导致程序运行变慢&lt;/li&gt;
+&lt;li&gt;在JS中有自动垃圾</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>32 Math对象</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9532/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9532/</id>
+    <published>2021-08-18T13:06:36.373Z</published>
+    <updated>2021-08-18T14:55:10.493Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Math和其他的对象不同，他不是一个构造函数&lt;ul&gt;
+&lt;li&gt;他属于一个工具类不用创建对象，他里面封装了数学运算相关的属性和方法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;比如：&lt;ul&gt;
+&lt;li&gt;Math.PI表示pai&lt;/li&gt;
+&lt;li&gt;console.log</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>31 Date对象</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9531/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9531/</id>
+    <published>2021-08-18T13:06:35.337Z</published>
+    <updated>2021-08-18T14:26:47.816Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4&gt;在JS中使用Date对象来表示一个时间&lt;/h4&gt;
+
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>30 arguments</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9530/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9530/</id>
+    <published>2021-08-18T13:06:34.499Z</published>
+    <updated>2021-08-18T14:27:15.865Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4&gt;在调用函数时，浏览器每次都会传递进两个隐含参数&lt;/h4&gt;
+ 1. 函数的上下文对象this
+ 2. 封装实参的对象arguments
+   </summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>29 call和apply</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9529/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9529/</id>
+    <published>2021-08-18T13:06:33.991Z</published>
+    <updated>2021-08-18T14:28:10.166Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4&gt;call()和apply()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;解释：这两个函数的作用都是在特定的作用域中将函数绑定到另一个对象上去运行，即可以用来重新定义函数的执行环境，两者仅在定义参数方式上有所区别&lt;ul&gt;
+&lt;li&gt;这两个方法都是函数对象的方法，需要通过函数对象来调用&lt;/</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>28 数组的剩余方法</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9528/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9528/</id>
+    <published>2021-08-18T13:06:33.925Z</published>
+    <updated>2021-08-18T14:29:46.592Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4&gt;concat()&lt;/h4&gt; 
+
+&lt;ul&gt;
+&lt;li&gt;可以连接两个或多个数组，并将新的数组返回&lt;/li&gt;
+&lt;li&gt;该方法不会对原数组产生影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>27 数组去重练习</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9527/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9527/</id>
+    <published>2021-08-18T13:06:32.381Z</published>
+    <updated>2021-08-18T13:43:53.871Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>26 slice和splice</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9526/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9526/</id>
+    <published>2021-08-18T13:06:31.742Z</published>
+    <updated>2021-08-18T14:31:03.530Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h4&gt;slice()&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;可以用来从数组提取指定元素&lt;/li&gt;
+&lt;li&gt;该方法不会改变元素数组&lt;/li&gt;
+&lt;li&gt;参数：&lt;ul&gt;
+&lt;li&gt;截取开始的位置索引，包含开始索引&lt;/li&gt;
+&lt;li&gt;截取结束的位置索引，不包含结束索引&lt;ul&gt;
+&lt;li&gt;第二个参数</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>25 forEach</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9525/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9525/</id>
+    <published>2021-08-18T13:06:31.687Z</published>
+    <updated>2021-08-18T14:34:06.234Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h5&gt;JS为我们提供了foreach方法来遍历数组&lt;/h5&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>24 数组遍历</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9524/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9524/</id>
+    <published>2021-08-18T13:06:31.646Z</published>
+    <updated>2021-08-18T14:51:58.914Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;创建一个数组&lt;/li&gt;
+&lt;li&gt;所谓的遍历数组，就是将数组中所有的元素都取出来&lt;br&gt;用for循环&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>23 数组的四个方法</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9523/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9523/</id>
+    <published>2021-08-18T13:06:31.543Z</published>
+    <updated>2021-08-18T14:50:41.951Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;创建一个数组&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>22 数组字面量</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9522/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9522/</id>
+    <published>2021-08-18T13:06:30.619Z</published>
+    <updated>2021-08-18T14:48:03.526Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;创建一个数组&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>21 数组</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9521/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9521/</id>
+    <published>2021-08-18T13:06:29.371Z</published>
+    <updated>2021-08-18T14:47:41.076Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;内建对象&lt;/li&gt;
+&lt;li&gt;宿主对象&lt;/li&gt;
+&lt;li&gt;自定义对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;数组（Array）&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;数组也是一个对象&lt;/li&gt;
+&lt;li&gt;他和普通对象类似，也是用来储存一些值的&lt;/li&gt;
+&lt;li&gt;不同的是：普通对象是</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>19 tostring()</title>
+    <link href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9519/"/>
+    <id>https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9519/</id>
+    <published>2021-08-18T11:23:24.813Z</published>
+    <updated>2021-08-18T13:05:19.856Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;当我们直接在页面中打印一个对象，实际上是输出对象的toString()方法的返回值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
+    
+    
+    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>18 原型对象</title>
@@ -146,317 +554,6 @@
     
     
     <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>12 debug</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9512/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9512/</id>
-    <published>2021-08-05T14:52:23.460Z</published>
-    <updated>2021-08-06T03:16:58.463Z</updated>
-    
-    
-    <summary type="html">&lt;h5&gt;F10添加监控，可以看各个值当前的参数（有点水）&lt;/h5&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11 函数作用域</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9511/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9511/</id>
-    <published>2021-08-05T14:47:18.058Z</published>
-    <updated>2021-08-15T05:34:04.751Z</updated>
-    
-    
-    <summary type="html">&lt;h4&gt;函数作用域&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;调用函数时创建的函数作用域，函数执行完毕后，函数作用域销毁&lt;/li&gt;
-&lt;li&gt;每调用一次函数，就会创建一个新的函数作用域，他们之间是相互独立的&lt;/li&gt;
-&lt;li&gt;在函数作用域中可以访问到全局作用域的变量&lt;br&gt;  在全局作用域中，无法访问到函数作用域的变量&lt;/li&gt;
-&lt;li&gt;在函数作用域中操作一个变量，会在自身作用域中寻找&lt;br&gt;  § 如果有就直接使用，如果没有，就在上一级作用域寻找。&lt;br&gt;  § 如果全局作用域中依然没有找到，则报错ReferenceError&lt;/li&gt;
-&lt;li&gt;在函数中要访问全局变量可以使用window对象。  例如window.a&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>10 全局作用域</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9510/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9510/</id>
-    <published>2021-08-05T14:39:17.027Z</published>
-    <updated>2021-08-15T05:32:32.639Z</updated>
-    
-    
-    <summary type="html">&lt;h3&gt;在JS中一共有两种作用域：&lt;/h3&gt;
-&lt;h4&gt;全局作用域&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;直接编写在script标签中的JS 代码，都在全局作用域&lt;/li&gt;
-&lt;li&gt;全局作用域在页面打开时创建，在页面关闭时销毁&lt;/li&gt;
-&lt;li&gt;在全局作用域中有一个全局对象window，&lt;ul&gt;
-&lt;li&gt;他代表的时一个浏览器窗口，我们可以直接使用&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;在全局作用域中：&lt;ul&gt;
-&lt;li&gt;创建的变量都会作为window对象的属性保存&lt;/li&gt;
-&lt;li&gt;创建的函数也会作为window对象的属性保存&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;全局作用域中的变量都是全局变量，在页面的任意部分都可以被访问到&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>09 JS基础_方法</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9509/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9509/</id>
-    <published>2021-08-05T14:32:19.896Z</published>
-    <updated>2021-08-15T05:32:18.714Z</updated>
-    
-    
-    <summary type="html">&lt;h5&gt;对象的属性值可以是任何的数据类型，也可以是函数&lt;/h5&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Object&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.name = “孙悟空”;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.age = &lt;span class=&quot;number&quot;&gt;18&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;obj.sayName = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(obj.name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fun&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(obj.name);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>08 立即执行函数</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9508/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9508/</id>
-    <published>2021-08-05T14:27:54.294Z</published>
-    <updated>2021-08-15T05:32:09.178Z</updated>
-    
-    
-    <summary type="html">&lt;h5&gt;立即执行函数：&lt;/h5&gt;
-
-&lt;p&gt;&lt;code&gt;函数对象()&lt;/code&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>07 返回值的类型</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9507/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9507/</id>
-    <published>2021-08-05T14:25:12.476Z</published>
-    <updated>2021-08-15T05:34:28.578Z</updated>
-    
-    
-    <summary type="html">&lt;h5&gt;使用break可以推出当前的循环&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;使用continue可以跳出当次循环&lt;/li&gt;
-&lt;li&gt;使用return可以结束整个函数&lt;/li&gt;
-&lt;li&gt;返回值可以时任意的数据类型，也可以是一个对象，也可以是一个函数&lt;br&gt;  &lt;strong&gt;注意：return fun3; 是返回一个函数&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; fun3();是返回一个函数的执行结果&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>06 实参可以是任何值</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9506/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9506/</id>
-    <published>2021-08-05T14:19:09.070Z</published>
-    <updated>2021-08-15T05:34:33.726Z</updated>
-    
-    
-    <summary type="html">&lt;h5&gt;实参可以是一个对象，也可以是一个函数&lt;/h5&gt;
-
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;mianji&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;3.14&lt;/span&gt;*r*r;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;sayHello&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;o&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(”我是”+o.name+“，今年我”+o.age+“岁，我住在”+o.address);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//sayHello（“猪八戒”，28，“高老庄”）；&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>05 函数的返回值</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9505/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9505/</id>
-    <published>2021-08-05T14:16:24.613Z</published>
-    <updated>2021-08-15T05:34:36.502Z</updated>
-    
-    
-    <summary type="html">&lt;h5&gt;函数返回值&lt;/h5&gt;
-
-&lt;ul&gt;
-&lt;li&gt;在函数中书写returnn语句，return后的值将会作为函数的执行结果返回&lt;/li&gt;
-&lt;li&gt;可以定义一个变量来接受结果&lt;/li&gt;
-&lt;li&gt;在函数中，return后的语句都不会执行&lt;/li&gt;
-&lt;li&gt;如果return语句后不跟任何值相当于返回undefined&lt;/li&gt;
-&lt;li&gt;return后可以跟任意数据类型&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>04 函数的参数</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9504/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9504/</id>
-    <published>2021-08-05T14:13:30.079Z</published>
-    <updated>2021-08-15T05:34:38.577Z</updated>
-    
-    
-    <summary type="html">&lt;h5&gt;函数参数&lt;/h5&gt;
-
-&lt;p&gt;定义一个用来求两个数和的函数，可以在函数的（）中指定一个或多个形参&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>03 函数简介</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9503/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9503/</id>
-    <published>2021-08-05T14:06:55.428Z</published>
-    <updated>2021-08-15T05:34:53.615Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;对象也是一个对象&lt;/li&gt;
-&lt;li&gt;函数可以封装一些功能（代码），在需要时可以执行这些功能（代码）&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>02 对象字面量</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9502/</id>
-    <published>2021-08-05T05:14:32.809Z</published>
-    <updated>2021-08-15T05:34:23.489Z</updated>
-    
-    
-    <summary type="html">&lt;h5&gt;使用对象字面量来创建一个对象：&lt;/h5&gt;
-
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj = &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;等同于&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>01 基本数据类型和引用数据类型</title>
-    <link href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/"/>
-    <id>https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9501/</id>
-    <published>2021-08-05T03:42:26.311Z</published>
-    <updated>2021-08-15T05:36:34.231Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;当比较两个基本数据类型时，就是比值  &lt;/li&gt;
-&lt;li&gt;当比较两个引用数据类型时，就是比较对象的内存地址  &lt;/li&gt;
-&lt;li&gt;如果两个对象时一模一样的，但是地址不同，也会返回false  &lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="JavaScript学习之路" scheme="https://qaaa.top/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小爱课程表适配</title>
-    <link href="https://qaaa.top/2021/07/29/xiaoai/"/>
-    <id>https://qaaa.top/2021/07/29/xiaoai/</id>
-    <published>2021-07-29T13:58:35.959Z</published>
-    <updated>2021-08-15T05:35:16.866Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h4 id=&quot;使用cheerio&quot;&gt;&lt;a href=&quot;#使用cheerio&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="小爱课程表" scheme="https://qaaa.top/categories/%E5%B0%8F%E7%88%B1%E8%AF%BE%E7%A8%8B%E8%A1%A8/"/>
-    
-    
-    <category term="JavaScript" scheme="https://qaaa.top/tags/JavaScript/"/>
-    
-    <category term="cheerio" scheme="https://qaaa.top/tags/cheerio/"/>
     
   </entry>
   
