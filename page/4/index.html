@@ -170,7 +170,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9551/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9523/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -184,7 +184,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9551/" class="post-title-link" itemprop="url">51 添加删除记录-删除</a>
+            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9523/" class="post-title-link" itemprop="url">23 数组的四个方法</a>
         </h2>
 
         <div class="post-meta">
@@ -200,7 +200,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-08-26 22:17:13 / 修改时间：23:51:04" itemprop="dateCreated datePublished" datetime="2021-08-26T22:17:13+08:00">2021-08-26</time>
+              <time title="创建时间：2021-08-18 21:06:31 / 修改时间：22:50:41" itemprop="dateCreated datePublished" datetime="2021-08-18T21:06:31+08:00">2021-08-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -224,13 +224,42 @@
 
       
           <ul>
-<li>点击超链接以后，超链接会自动跳转页面，这个是超链接的默认行为<br>但是此时我们不希望出现默认行为，可以通过在响应函数的最后return false 来取消默认行为</li>
+<li>创建一个数组</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="string">&quot;孙悟空&quot;</span>,<span class="string">&quot;猪八戒&quot;</span>,<span class="string">&quot;沙和尚&quot;</span>];</span><br></pre></td></tr></table></figure>
+<h5>push()</h5>
+
 <ul>
-<li>点击哪个超链接this就是谁<ul>
-<li>confirm<br><code>提示框： 需要一个字符串作为参数，该字符串将会作为提示文字显示出来</code></li>
+<li>该方法可以向数组的末尾添加一个或多个元素，并返回数组的新长度<ul>
+<li>可以将要添加的元素作为方法的参数传递<ul>
+<li>这样这些元素将会自动添加到数组的末尾</li>
 </ul>
 </li>
+<li>该方法会将数组的新长度作为返回值返回</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = arr.push(<span class="string">&quot;唐僧&quot;</span>,<span class="string">&quot;蜘蛛精&quot;</span>,<span class="string">&quot;白骨精&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(result);  /输出<span class="number">6</span>，即长度为<span class="number">6</span></span><br></pre></td></tr></table></figure>
+
+<h5>pop()</h5>
+
+<ul>
+<li>该方法可以删除数组的最后一个元素，并将删除元素作为返回值返回</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">arr.pop();</span><br><span class="line"><span class="keyword">var</span> result = arr.pop();</span><br></pre></td></tr></table></figure>
+
+<h5>unshift()</h5>
+
+<ul>
+<li>该方法向数组开头添加一个或多个元素，并返回新的数组长度<ul>
+<li>向前边插入元素以后，其他的元素索引会依次调整</li>
+</ul>
+</li>
+</ul>
+<h5>shift()</h5>
+    
+<ul>
+<li>删除数组的第一个元素，并将删除的元素作为返回值返回</li>
 </ul>
 
       
@@ -251,7 +280,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9533/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9522/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -265,7 +294,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9533/" class="post-title-link" itemprop="url">33 包装类</a>
+            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9522/" class="post-title-link" itemprop="url">22 数组字面量</a>
         </h2>
 
         <div class="post-meta">
@@ -281,7 +310,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-08-26 22:17:13 / 修改时间：22:23:42" itemprop="dateCreated datePublished" datetime="2021-08-26T22:17:13+08:00">2021-08-26</time>
+              <time title="创建时间：2021-08-18 21:06:30 / 修改时间：22:48:03" itemprop="dateCreated datePublished" datetime="2021-08-18T21:06:30+08:00">2021-08-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -305,36 +334,48 @@
 
       
           <ul>
-<li>基本数据类型<br>  <code>String Number Boolean Null Undefined</code></li>
-<li>引用数据类型<br>  <code>Object</code></li>
+<li>创建一个数组</li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>();</span><br><span class="line">arr[<span class="number">0</span>] = <span class="number">123</span>;</span><br></pre></td></tr></table></figure>
 <ul>
-<li>包装类是代码运行时提供给底层的，我们用不到</li>
+<li>使用字面量来创建数组<br><code>语法：[]</code></li>
 </ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [];</span><br></pre></td></tr></table></figure>
 <ul>
-<li>在JS中，为我们提供了三个包装类，通过这三个包装类可以将基本数据类型转换为对象<ul>
-<li>String()<ul>
-<li>可以将基本数据类型字符串转换为String对象</li>
+<li>使用字面量创建数组时，可以在创建时就指定数组中的元素</li>
 </ul>
-</li>
-<li>Number()<ul>
-<li>可以将基本数据类型的数字转换为Number对象</li>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">10</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>使用构造函数创建数组时，也可以同时添加元素，将要添加的元素作为构造函数的传递参数</li>
+<li>元素之间使用 ，隔开</li>
 </ul>
-</li>
-<li>Boolean()<ul>
-<li>可以将基本数据类型的布尔值转换为Boolean对象</li>
-</ul>
-</li>
-<li>注意，我们在实际中基本不会使用基本数据类型的对象<ul>
-<li>如果使用，可能会产生一些不可预期的结果</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//基本数据类型对象</span></span><br><span class="line"><span class="keyword">var</span> num = <span class="keyword">new</span> <span class="built_in">Number</span>(<span class="number">3</span>);</span><br><span class="line"><span class="keyword">var</span> str = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;hello&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> str2 = <span class="keyword">new</span> <span class="built_in">String</span>(<span class="string">&quot;hello&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> bool = <span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> bool2 = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//向num中添加一个属性</span></span><br><span class="line">num.hello = <span class="string">&quot;abcdefg&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(bool == bool2);  <span class="comment">//输出true，比较时会进行类型转化，bool对象转化为true了</span></span><br><span class="line"><span class="built_in">console</span>.log(bool === bool2);  <span class="comment">//输出false，</span></span><br><span class="line"><span class="built_in">console</span>.log(num = num2);  <span class="comment">//输出false，因为两个对象比较的是地址值</span></span><br><span class="line"><span class="built_in">console</span>.log(str == str2);  <span class="comment">//输出</span></span><br><span class="line"><span class="keyword">var</span> b = <span class="keyword">new</span> <span class="built_in">Boolean</span>(<span class="literal">false</span>);</span><br><span class="line"><span class="keyword">if</span>(b)&#123;</span><br><span class="line">	alert(<span class="string">&quot;运行了&quot;</span>);  <span class="comment">//if后面跟的b是一个对象，无论值是什么if都会运行的</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr2 = <span class="keyword">new</span> <span class="built_in">Array</span>[<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>];</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- 方法和属性值能添加给对象，不能添加给基本数据类型</span><br><span class="line">	- 当我们对一些基本数据类型的值去调用属性和方法时，浏览器会临时使用包装类将其转换为对象，然后再调用对象的属性和方法，调用完以后，在将其转换为基本数据类型</span><br><span class="line"><span class="keyword">var</span> s = <span class="number">123</span>;</span><br><span class="line">s = s.toString();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> s);  <span class="comment">//输出string</span></span><br><span class="line">s.hello =<span class="string">&quot;你好&quot;</span>;</span><br><span class="line"><span class="built_in">console</span>.log(s.hello);  <span class="comment">//输出undefined，因为只是暂时将s转换为对象，之后又转换为基本数据类型</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>创建一个数组，数组中只有一个元素10</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr = [<span class="number">10</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>创建一个长度为10的数组</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr2 = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">10</span>);</span><br></pre></td></tr></table></figure>
+<ul>
+<li>数组中的元素可以是任意的数据类型</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr = [<span class="string">&quot;hello&quot;</span>,<span class="number">1</span>,<span class="literal">true</span>,<span class="literal">null</span>,<span class="literal">undefined</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>也可以是对象</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">name</span>:<span class="string">&quot;孙悟空&quot;</span>&#125;;</span><br><span class="line">arr[arr.length] = obj;</span><br><span class="line">arr = [&#123;<span class="attr">name</span>:<span class="string">&quot;猪八戒&quot;</span>&#125;,&#123;<span class="attr">name</span>:<span class="string">&quot;沙和尚&quot;</span>&#125;,&#123;<span class="attr">name</span>:<span class="string">&quot;孙悟空&quot;</span>&#125;];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>数组中放函数</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr = [<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;alert(<span class="number">1</span>)&#125;,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;alert(<span class="number">2</span>)&#125;];</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>数组中放数组，即二维数组</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arr = [[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],[<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>],[<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>]];</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -353,7 +394,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9534/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9521/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -367,7 +408,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9534/" class="post-title-link" itemprop="url">34 字符串的方法</a>
+            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9521/" class="post-title-link" itemprop="url">21 数组</a>
         </h2>
 
         <div class="post-meta">
@@ -383,200 +424,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-08-26 22:17:13 / 修改时间：22:43:27" itemprop="dateCreated datePublished" datetime="2021-08-26T22:17:13+08:00">2021-08-26</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;Hello atsfsd&quot;</span>;</span><br><span class="line"><span class="comment">//在底层字符串是以字符数组的形式保存的</span></span><br><span class="line">[<span class="string">&quot;h&quot;</span>,<span class="string">&quot;e&quot;</span>,<span class="string">&quot;l&quot;</span>]</span><br><span class="line"><span class="built_in">console</span>.log(str[<span class="number">5</span>]);</span><br></pre></td></tr></table></figure>
-
-<p><strong>PS:该篇中的方法都不会影响原数组中的元素</strong></p>
-<ul>
-<li>length()<ul>
-<li>可以用来获取字符串的长度</li>
-<li>console.log(str.length);</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>charAt()<ul>
-<li>可以返回字符串中指定位置的字符</li>
-<li>var result = str.charAt(3);</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>charCodeAt()<ul>
-<li>返回字符串指定位置字符的Unicode编码</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>formCharCode()<ul>
-<li>可以根据字符编码去获取字符</li>
-<li>result = String.fromCharCode(74);</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>concat()<ul>
-<li>可以用来连接两个或多个字符串</li>
-<li>作用和+一样</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>indexOf()<ul>
-<li>该方法可以检索一个字符串中是否含有指定内容</li>
-<li>如果字符床中含有该内容，则会返回其第一次出现的索引<ul>
-<li>如果没有找到指定的内容，则会返回-1</li>
-</ul>
-</li>
-<li>可以指定一个第二个参数，指定开始查找的位置</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>lastIndexOf()<ul>
-<li>该方法的用法和indexOf()一样</li>
-<li>不同的是，indexOf是从前往后找，而lastIndexOf是从后往前找</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">&quot;hello sdfsf&quot;</span>;</span><br><span class="line">result = str.indexOf(<span class="string">&quot;p&quot;</span>);</span><br><span class="line"><span class="built_in">console</span>.log(result);  <span class="comment">//输出-1，没找到p</span></span><br></pre></td></tr></table></figure>
-
-
-<ul>
-<li>slice()<ul>
-<li>可以从字符串中截取指定的内容</li>
-<li>不会影响原字符串，而是将截取的内容返回</li>
-<li>参数：<ul>
-<li>第一个，开始位置的索引(包括开始位置)</li>
-<li>第二个，结束位置的索引(不包括结束位置)<br>  □ 如果省略第二个参数，则会截取到后边所有的</li>
-<li>也可以传递一个负数作为参数，负数时将从后边计算</li>
-</ul>
-</li>
-<li>str.slice(1,-2)</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>substring()<ul>
-<li>可以用来截取一个字符串，可以slice()类似</li>
-<li>参数：<ul>
-<li>第一个：开始位置的索引(包括开始位置)</li>
-<li>第二个：结束为止的索引(不包括结束位置)<br>  □ 不同的是，这个方法不能接受负值作为参数,如果传递了一个负值，则默认使用0<br>  □ 而且可以自动调整参数的位置，如果第二个参数小于第一个，则自动交换</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">result = str.substring(<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line">result = str.substring(<span class="number">1</span>,<span class="number">0</span>);<span class="comment">//转换为substring(0，1);</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>substr()<ul>
-<li>用来截取字符串</li>
-<li>参数：<ul>
-<li>第一个：截取开始位置的索引</li>
-<li>第二个：截取的长度</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>split()<ul>
-<li>可以将字符串拆封为一个数组</li>
-<li>参数：<ul>
-<li>需要一个字符串作为参数，将会根据该字符串去拆分数组</li>
-<li>如果传递一个空串作为参数，则会将每个字符都会拆分为数组中的元素</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">&quot;Aabc,bcd,egg,hij&quot;</span>;</span><br><span class="line">result = str.split(<span class="string">&quot;,&quot;</span>); </span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>toUpperCase()<ul>
-<li>将一个字符串转换为大写并返回</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>toLowerCase()<ul>
-<li>将一个字符串转换为小写并返回</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9535/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
-      <meta itemprop="name" content="Sun Aoxin">
-      <meta itemprop="description" content="OnlyWait">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="OnlyWait's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9535/" class="post-title-link" itemprop="url">35 正则表达式简介</a>
-        </h2>
-
-        <div class="post-meta">
-
-            <div class="post-meta">
-<!-- 置顶插件添加 开始 -->
-
-<!-- 置顶插件添加 结束 -->
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-08-26 22:17:13 / 修改时间：22:50:28" itemprop="dateCreated datePublished" datetime="2021-08-26T22:17:13+08:00">2021-08-26</time>
+              <time title="创建时间：2021-08-18 21:06:29 / 修改时间：22:47:41" itemprop="dateCreated datePublished" datetime="2021-08-18T21:06:29+08:00">2021-08-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -600,26 +448,45 @@
 
       
           <ul>
-<li>正则表达式用于定义一些字符串的规则</li>
-<li>计算机可以根据正则表达式，来检查一个字符串是否符合规则，获取字符串中符合规则的内容提取出来</li>
-<li>创建正则表达式的对象</li>
+<li>内建对象</li>
+<li>宿主对象</li>
+<li>自定义对象</li>
+</ul>
+<h5>数组（Array）</h5>
+
+<ul>
+<li>数组也是一个对象</li>
+<li>他和普通对象类似，也是用来储存一些值的</li>
+<li>不同的是：普通对象是使用字符串来作为属性名的<ul>
+<li>数组是使用数字来作为索引操作元素</li>
+</ul>
+</li>
+<li>索引：<ul>
+<li>从0开始的正数就是索引</li>
+</ul>
+</li>
+<li>数组的储存性能比普通对象要好，在开发中，我们经常使用数组来储存一些数据 </li>
+<li>向数组中添加元素<br><code>语法：数组[索引] = 值</code></li>
+</ul>
+<h5>获取数组长度</h5>
+
+<ul>
+<li>可以使用length属性来获取数组的长度（元素的个数）<br><code>语法：数组.length</code></li>
 </ul>
 <ul>
-<li>语法：<br>  <code>var 变量 = new RegExp(&quot;正则表达式&quot;，&quot;匹配模式&quot;);</code><br>  使用typrof检查正则对象，会返回object<br>  <code>var reg = new RegExp(&quot;a&quot;，&quot;i&quot;);</code></li>
-</ul>
-<ul>
-<li>这个正则表达式可以来检查一个字符串中是否含有a</li>
-</ul>
-<ul>
-<li>在构造函数中可以传递一个匹配模式作为第二个参数：<br>  ○ 可以是i  忽略大小写<br>  ○          g  全局匹配模式<br>  <code>var str = &quot;a&quot;;</code></li>
-</ul>
-<ul>
-<li>正则表达式的方法：<ul>
-<li>使用这个方法可以以用来检查一个字符串是否符合字符串正则表达式的规则<br>  ○ 如果符合则返回true，否则返回false</li>
+<li>对于连续的数组，使用length可以获取到数组的长度（元素的个数）<ul>
+<li>对于非连续的数组，使用length会获取到数组的最大的索引+1</li>
+<li>尽量不要创建非连续的数组</li>
 </ul>
 </li>
 </ul>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = reg.test(str);</span><br><span class="line"><span class="built_in">console</span>.log(reg.test(<span class="string">&quot;Abcbc&quot;</span>));</span><br></pre></td></tr></table></figure>
+<ul>
+<li>如果修改length大于原长度，则多处部分空着<br>如果修改的length小于原长度，则多出的元素会删除</li>
+</ul>
+<ul>
+<li>向数组的最后一位置添加元素<br><code>语法：数组[数组.length] = 值</code></li>
+</ul>
+
       
     </div>
 
@@ -638,7 +505,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9536/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9519/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -652,7 +519,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9536/" class="post-title-link" itemprop="url">36 正则语法</a>
+            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9519/" class="post-title-link" itemprop="url">19 tostring()</a>
         </h2>
 
         <div class="post-meta">
@@ -668,7 +535,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-08-26 22:17:12 / 修改时间：22:56:20" itemprop="dateCreated datePublished" datetime="2021-08-26T22:17:12+08:00">2021-08-26</time>
+              <time title="创建时间：2021-08-18 19:23:24 / 修改时间：21:05:19" itemprop="dateCreated datePublished" datetime="2021-08-18T19:23:24+08:00">2021-08-18</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -692,34 +559,13 @@
 
       
           <ul>
-<li><p>使用字面量来创建正则表达式</p>
-<p>  <code>语法：var 变量 = /正则表达式/匹配模式</code><br>  <code>reg = /a/i;</code></p>
-</li>
+<li>当我们直接在页面中打印一个对象，实际上是输出对象的toString()方法的返回值</li>
 </ul>
-<ul>
-<li>方式：<ul>
-<li>使用字面量的方式创建更加简单</li>
-<li>使用构造函数创建更加灵活</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>使用｜来表示或者的意思</li>
-</ul>
-<ul>
-<li>//创建一个正则表达式，姜茶一个字符串中是否含有a或b<br>  <code>reg = /a|b/;</code></li>
-</ul>
-<ul>
-<li><p>//创建一个这个正则表达式检查字符串中是否有字母<br>  <code>reg = /a|b|c|d|e|f|g/;</code></p>
-</li>
-<li><p>使用[]也是表示或的关系<br>  <code>[ab] == a|b</code><br>  <code>[a-z]  任意小写字母</code><br>  <code>[A-Z] 任意大写字母</code><br>  <code>reg = /[a-z]/;</code></p>
-</li>
-<li><p>//检查一个字符串中是否含abc 或 adc 或 aec<br>  <code>reg = /a[bde]c/;</code></p>
-<p>  <code>[^ ]除了</code> </p>
-<p>  <code>reg = /[^ab]/;  //含有除了a或b以外的字符</code><br>  <code>reg = /[^0-9]/;</code></p>
-</li>
-</ul>
-
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,age,gender</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">this</span>.name = name;</span><br><span class="line">	<span class="built_in">this</span>.age = age;</span><br><span class="line">	<span class="built_in">this</span>.gender = gender;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//修改原型的toString</span></span><br><span class="line">Person.prototype.toString = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;person[name]=&quot;</span>+<span class="built_in">this</span>.name+<span class="string">&quot;,age = &quot;</span>+<span class="built_in">this</span>.age+<span class="string">&quot;,gender = &quot;</span>+gender;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> per = <span class="keyword">new</span> Person(<span class="string">&quot;孙悟空&quot;</span>,<span class="number">18</span>,<span class="string">&quot;男&quot;</span>);</span><br><span class="line"><span class="comment">//修改对象的toString</span></span><br><span class="line">per.toString = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="string">&quot;我是个快乐的小Person&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(per);         <span class="comment">//输出[object object]    console.log(per);相当于输出了per.toString()</span></span><br></pre></td></tr></table></figure>
+<p>等同于</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = per.toString();</span><br><span class="line"><span class="built_in">console</span>.log(result);     <span class="comment">//输出[object object]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(per.__proto__.__proto__.hasOwnProperty(<span class="string">&quot;toString&quot;</span>));     <span class="comment">//输出true toString存在于原型的原型中</span></span><br><span class="line"><span class="built_in">console</span>.log(per);        <span class="comment">//输出  我是个快乐的小Person</span></span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -738,7 +584,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9537/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -752,7 +598,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9537/" class="post-title-link" itemprop="url">37 字符串和正则相关的方法</a>
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/" class="post-title-link" itemprop="url">18 原型对象</a>
         </h2>
 
         <div class="post-meta">
@@ -766,10 +612,202 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-08-26 22:17:11 / 修改时间：23:00:23" itemprop="dateCreated datePublished" datetime="2021-08-26T22:17:11+08:00">2021-08-26</time>
+              <time title="创建时间：2021-08-05 23:08:53" itemprop="dateCreated datePublished" datetime="2021-08-05T23:08:53+08:00">2021-08-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-15 13:31:32" itemprop="dateModified" datetime="2021-08-15T13:31:32+08:00">2021-08-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4> 原型prototype </h4>
+
+
+<ul>
+<li>我们所创建的每个函数，解析器都会向函数中添加一个属性prototype，这个属性对应着一个对象，这个对象就是我们所谓的原型对象</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9518/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
+      <meta itemprop="name" content="Sun Aoxin">
+      <meta itemprop="description" content="OnlyWait">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="OnlyWait's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/" class="post-title-link" itemprop="url">17 构造函数修改</a>
+        </h2>
+
+        <div class="post-meta">
+
+            <div class="post-meta">
+<!-- 置顶插件添加 开始 -->
+
+<!-- 置顶插件添加 结束 -->
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-08-05 23:07:00" itemprop="dateCreated datePublished" datetime="2021-08-05T23:07:00+08:00">2021-08-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-15 13:33:33" itemprop="dateModified" datetime="2021-08-15T13:33:33+08:00">2021-08-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h4>创建一个Person构造函数</h4>
+
+<ul>
+<li>在Person构造函数中，为每一个对象都添加一个sayName方法</li>
+<li>目前我们的方法是在构造函数内部创建的<ul>
+<li>也就是构造函数每执行一次就会创建一个新的sayName方法</li>
+<li>也就是所有实例的sayName都是唯一的</li>
+</ul>
+</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9517/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
+      <meta itemprop="name" content="Sun Aoxin">
+      <meta itemprop="description" content="OnlyWait">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="OnlyWait's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/" class="post-title-link" itemprop="url">16 构造函数</a>
+        </h2>
+
+        <div class="post-meta">
+
+            <div class="post-meta">
+<!-- 置顶插件添加 开始 -->
+
+<!-- 置顶插件添加 结束 -->
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-08-05 22:57:38" itemprop="dateCreated datePublished" datetime="2021-08-05T22:57:38+08:00">2021-08-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-15 13:33:42" itemprop="dateModified" datetime="2021-08-15T13:33:42+08:00">2021-08-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -792,39 +830,17 @@
 
       
           <ul>
-<li>split()<ul>
-<li>可以将一个字符串拆分为一个数组</li>
-<li>方法中可以传递一个正则表达式作为参数，这样方法会根据正则表达式来拆分</li>
-<li>这个方法不指定全局匹配，也会全部拆分</li>
+<li>由于使用工厂方法创建的对象，使用的构造函数都是Object</li>
+<li>无法区分出多种不同的对象所以才有下文</li>
 </ul>
-  <code>//可以根据任意字母来将字符串拆分</code><br>  <code>var str = “1a2b3c4d5e6f7”;</code><br>  <code>result = str.split(/[A-z]/);</code></li>
-</ul>
-<ul>
-<li>search()<ul>
-<li>可以搜索字符串中是否含有指定内容</li>
-<li>如果搜索到指定内容，则会返回第一次出现的索引，如果没有搜索到返回-1</li>
-<li>它可以接受一个正则表达式作为参数，然后根据正则表达式去检索字符串</li>
-<li>只会查找第一个，即使设置全局匹配也没用</li>
-</ul>
-  <code>str = “hello abc hello abc”；</code><br>  <code>//搜索字符串中是否含有abc 或aec 或afc</code><br>  <code>result = str.search(/a[bef]c/);</code></li>
-</ul>
-<ul>
-<li>match()<ul>
-<li>可以根据正则表达式，从一个字符串中将符合条件的内容提取出来</li>
-<li>默认情况下，我们的match只会找到一个符合要求的内容，找到后就停止检索<br>  § 我们可以设置正则表达式为全局匹配模式，来匹配所有的内容<br>  § 可以为一个正则表达式设置多个匹配模式，且顺序无所谓</li>
-<li>match()会将匹配的内容封装到一个数组中返回，即使只查询到一个结果<br><code>str = “1a2b3c4d5e6f7”;</code><br><code>result = str.match(/[A-z]/g);</code><br><code>result = str.match(/a-z/gi);  //匹配大小写字母，和上方匹配相同</code></li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>replace()<ul>
-<li>可以将字符串中指定内容替换为新的内容</li>
-<li>参数：<br>  § 被替换的内容，可以接受一个这个正则表达式作为参数<br>  § 新的内容</li>
-<li>默认只替换第一个<br><code>result = str.replace(”a”,”@_@”);  //匹配第一个a来进行替换为@_@</code><br><code>result = str.replace(/[a-z]/gi,””);  //匹配所有大小写字母进行替换</code></li>
-</ul>
-</li>
-</ul>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9516/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -843,7 +859,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%20-%20%E5%89%AF%E6%9C%AC/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -857,7 +873,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95%20-%20%E5%89%AF%E6%9C%AC/" class="post-title-link" itemprop="url">32 Math对象</a>
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/" class="post-title-link" itemprop="url">15 使用工厂方法创建对象</a>
         </h2>
 
         <div class="post-meta">
@@ -871,10 +887,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-08-26 22:17:10 / 修改时间：22:17:05" itemprop="dateCreated datePublished" datetime="2021-08-26T22:17:10+08:00">2021-08-26</time>
+              <time title="创建时间：2021-08-05 22:55:48" itemprop="dateCreated datePublished" datetime="2021-08-05T22:55:48+08:00">2021-08-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-15 13:33:48" itemprop="dateModified" datetime="2021-08-15T13:33:48+08:00">2021-08-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -896,8 +918,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>- </p>
-
+          <h5>逐个创建对象</h5>
+正常情况下是逐个创建对象，过于繁琐，才有了工厂模式创建对象（即封装函数）
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9515/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -916,7 +946,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9514/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -930,7 +960,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/26/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" class="post-title-link" itemprop="url">32 Math对象</a>
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9514/" class="post-title-link" itemprop="url">14 this关键字补充</a>
         </h2>
 
         <div class="post-meta">
@@ -944,10 +974,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-08-26 22:16:32 / 修改时间：22:17:05" itemprop="dateCreated datePublished" datetime="2021-08-26T22:16:32+08:00">2021-08-26</time>
+              <time title="创建时间：2021-08-05 22:54:45" itemprop="dateCreated datePublished" datetime="2021-08-05T22:54:45+08:00">2021-08-05</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-15 13:33:56" itemprop="dateModified" datetime="2021-08-15T13:33:56+08:00">2021-08-15</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -969,8 +1005,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>- </p>
-
+          <h5>this补充说明--></h5>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9514/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -989,7 +1032,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9520/">
+    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9513/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
@@ -1003,7 +1046,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9520/" class="post-title-link" itemprop="url">20 垃圾回收（GC）</a>
+            <a href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9513/" class="post-title-link" itemprop="url">13 this关键字</a>
         </h2>
 
         <div class="post-meta">
@@ -1017,90 +1060,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-08-18 21:06:44 / 修改时间：21:09:54" itemprop="dateCreated datePublished" datetime="2021-08-18T21:06:44+08:00">2021-08-18</time>
+              <time title="创建时间：2021-08-05 22:53:36" itemprop="dateCreated datePublished" datetime="2021-08-05T22:53:36+08:00">2021-08-05</time>
             </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/JavaScript%E5%AD%A6%E4%B9%A0%E4%B9%8B%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">JavaScript学习之路</span></a>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
                 </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <ul>
-<li>程序运行过程中会产生垃圾，需要建立垃圾回收机制来回收垃圾</li>
-<li>当一个对象没有任何的变量或属性对他进行应用，此时他将永远无法操作该对象</li>
-<li>此时这种对象就是垃圾，会占用大量内存空间，导致程序运行变慢</li>
-<li>在JS中有自动垃圾回收机制，会自动将这些垃圾对象从内存中销毁</li>
-<li>我们不需要也不能进行垃圾回收操作 </li>
-<li>我们需要做的只是将不再使用的对象设置null即可</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://qaaa.top/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9532/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/wb4hgcasiet-lp.jpeg">
-      <meta itemprop="name" content="Sun Aoxin">
-      <meta itemprop="description" content="OnlyWait">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="OnlyWait's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/08/18/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9532/" class="post-title-link" itemprop="url">32 Math对象</a>
-        </h2>
-
-        <div class="post-meta">
-
-            <div class="post-meta">
-<!-- 置顶插件添加 开始 -->
-
-<!-- 置顶插件添加 结束 -->
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-06 11:15:32" itemprop="dateModified" datetime="2021-08-06T11:15:32+08:00">2021-08-06</time>
               </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-08-18 21:06:36 / 修改时间：22:55:10" itemprop="dateCreated datePublished" datetime="2021-08-18T21:06:36+08:00">2021-08-18</time>
-            </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -1123,61 +1092,15 @@
 
       
           <ul>
-<li>Math和其他的对象不同，他不是一个构造函数<ul>
-<li>他属于一个工具类不用创建对象，他里面封装了数学运算相关的属性和方法</li>
-</ul>
-</li>
-<li>比如：<ul>
-<li>Math.PI表示pai</li>
-<li>console.log(Math.PI);</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>abs()可以用来计算一个数的绝对值<ul>
-<li>console.log(Math.abs(-1));</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Math.ceil()<ul>
-<li>可以对一个数进行向上取整，小数位只要有值就自动进1</li>
-<li>console.log(Math.ceil(1.1));</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Math.floor()<ul>
-<li>可以对一个数进行向下取整，小数部分被舍去</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Math.round()<ul>
-<li>把数四舍五入为最接近的整数</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Math.random()<ul>
-<li>用来生成一个0～1之间的随机数</li>
-<li>生成一个一个0～x之间的随机数<br>Ｍath.round(Math.random()*x);</li>
-<li>生成一个x～y之间的随机数<br>Math.round(Math.random()*(y-x)+x);</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>max()可以获取多个数中的最大值</li>
-<li>min()可以获取多个数中的最小值<ul>
-<li>var max = Math.max(10,28,19,299);</li>
-<li>var min = Math.max(12,42,23,14); </li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>Math.pow(x,y)返回x的y次幂</li>
-</ul>
-
+<li>解析器在调用函数每次都会向函数内部传递进一个隐含的参数，这个隐含的参数就是this，this指向的是一个对象
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/08/05/JavaScript%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%9513/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1195,7 +1118,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1265,7 +1188,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">70</span>
+          <span class="site-state-item-count">52</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
